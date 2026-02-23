@@ -4,17 +4,18 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import {
   Shield,
-  Heart,
   Receipt,
   TrendingUp,
   Calculator,
   ArrowRight,
   CheckCircle,
-  Users,
   Award,
   Clock,
-  Star,
   ChevronRight,
+  BookOpen,
+  Target,
+  GraduationCap,
+  AlertTriangle,
 } from "lucide-react";
 
 const categories = [
@@ -143,23 +144,16 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <Badge className="bg-white/20 text-white border-0">
-                India's #1 Finance, Tax Education Platform
-                Our Mission
+                India&apos;s #1 Finance, Tax & Insurance Education Platform
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Your Complete Guide to{" "}
-                <span className="text-yellow-300">Finance, Insurance & Tax</span>{" "}
-                in India
                 <span className="text-yellow-300">Free Financial Education for Every Indian</span>{" "}
               </h1>
               <p className="text-lg md:text-xl text-blue-100 max-w-xl">
-                Make informed financial decisions with our comprehensive guides, 
-                comparison tools, and interactive calculators. A free educational 
-                resource to help Indians understand personal finance, insurance concepts,
-                 and taxation. No products sold, no hidden agenda - just unbiased knowledge.
-                . SabPataKaro is a free educational platform dedicated to improving financial
-                literacy in India.
-                We believe everyone deserves access to unbiased financial knowledge.
+                A free educational resource to help Indians understand personal finance,
+                insurance concepts, and taxation. No products sold, no hidden agenda —
+                just unbiased knowledge. SabPataKaro is dedicated to improving financial
+                literacy across India.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="cta-button text-white">
@@ -185,7 +179,7 @@ export default function HomePage() {
                     </div>
                     <div>
                       <p className="font-semibold">Tax Education</p>
-                      <p className="text-sm text-blue-100">Learn about deductions & exemptions</p>
+                      <p className="text-sm text-blue-100">Learn about deductions &amp; exemptions</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -194,7 +188,7 @@ export default function HomePage() {
                     </div>
                     <div>
                       <p className="font-semibold">Insurance Concepts</p>
-                      <p className="text-sm text-blue-100">Understand coverage, claims & policies</p>
+                      <p className="text-sm text-blue-100">Understand coverage, claims &amp; policies</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -203,7 +197,7 @@ export default function HomePage() {
                     </div>
                     <div>
                       <p className="font-semibold">Investment Basics</p>
-                      <p className="text-sm text-blue-100">Learn about SIPs, mutual funds & more</p>
+                      <p className="text-sm text-blue-100">Learn about SIPs, mutual funds &amp; more</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -228,8 +222,8 @@ export default function HomePage() {
           <div className="flex items-start gap-3">
             <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" />
             <div className="text-sm text-amber-800">
-              <strong>Educational Purpose Only:</strong> This website provides general financial education and information. 
-              We do not sell insurance, offer financial advice, or recommend specific products. 
+              <strong>Educational Purpose Only:</strong> This website provides general financial education and information.
+              We do not sell insurance, offer financial advice, or recommend specific products.
               Always consult qualified professionals before making financial decisions.
             </div>
           </div>
@@ -264,7 +258,7 @@ export default function HomePage() {
             <span className="gradient-text">Knowledge Base</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive guides on insurance, tax planning, and investments 
+            Comprehensive guides on insurance, tax planning, and investments
             to help you make informed financial decisions.
           </p>
         </div>
@@ -317,10 +311,10 @@ export default function HomePage() {
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Financial{" "}
-              <span className="gradient-text">Calculators & Tools</span>
+              <span className="gradient-text">Calculators &amp; Tools</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Make smart financial decisions with our easy-to-use calculators. 
+              Make smart financial decisions with our easy-to-use calculators.
               Get instant results and plan your finances better.
             </p>
           </div>
@@ -374,8 +368,8 @@ export default function HomePage() {
               <span className="gradient-text">Indian Investors</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              SabPataKaro is your reliable partner for all financial decisions. 
-              Our expert-researched content helps you navigate the complex world 
+              SabPataKaro is your reliable partner for all financial decisions.
+              Our expert-researched content helps you navigate the complex world
               of insurance, taxes, and investments with confidence.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -387,27 +381,27 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-            <div className="grid grid-cols-2 gap-4">
-              <Card className="p-6 text-center">
-                <BookOpen className="h-8 w-8 text-[#1e40af] mx-auto mb-3" />
-                <p className="text-2xl font-bold">Free</p>
-                <p className="text-sm text-muted-foreground">Forever</p>
-              </Card>
-              <Card className="p-6 text-center">
-                <Award className="h-8 w-8 text-[#7c3aed] mx-auto mb-3" />
-                <p className="text-2xl font-bold">Quality</p>
-                <p className="text-sm text-muted-foreground">Content</p>
-              </Card>
-              <Card className="p-6 text-center">
-                <Target className="h-8 w-8 text-[#059669] mx-auto mb-3" />
-                <p className="text-2xl font-bold">Unbiased</p>
-                <p className="text-sm text-muted-foreground">Information</p>
-              </Card>
-              <Card className="p-6 text-center">
-                <Clock className="h-8 w-8 text-[#ea580c] mx-auto mb-3" />
-                <p className="text-2xl font-bold">Updated</p>
-                <p className="text-sm text-muted-foreground">Regularly</p>
-              </Card>
+          <div className="grid grid-cols-2 gap-4">
+            <Card className="p-6 text-center">
+              <BookOpen className="h-8 w-8 text-[#1e40af] mx-auto mb-3" />
+              <p className="text-2xl font-bold">Free</p>
+              <p className="text-sm text-muted-foreground">Forever</p>
+            </Card>
+            <Card className="p-6 text-center">
+              <Award className="h-8 w-8 text-[#7c3aed] mx-auto mb-3" />
+              <p className="text-2xl font-bold">Quality</p>
+              <p className="text-sm text-muted-foreground">Content</p>
+            </Card>
+            <Card className="p-6 text-center">
+              <Target className="h-8 w-8 text-[#059669] mx-auto mb-3" />
+              <p className="text-2xl font-bold">Unbiased</p>
+              <p className="text-sm text-muted-foreground">Information</p>
+            </Card>
+            <Card className="p-6 text-center">
+              <Clock className="h-8 w-8 text-[#ea580c] mx-auto mb-3" />
+              <p className="text-2xl font-bold">Updated</p>
+              <p className="text-sm text-muted-foreground">Regularly</p>
+            </Card>
           </div>
         </div>
       </section>
@@ -419,7 +413,7 @@ export default function HomePage() {
             Ready to Improve Your Financial Knowledge?
           </h2>
           <p className="text-lg text-blue-100 max-w-2xl mx-auto mb-8">
-            Start your journey to financial literacy today. Our comprehensive guides 
+            Start your journey to financial literacy today. Our comprehensive guides
             and educational tools are free for everyone.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
