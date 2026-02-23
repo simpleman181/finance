@@ -19,29 +19,29 @@ import {
 
 const categories = [
   {
-    title: "Term Insurance",
-    description: "Secure your family's financial future with the right term insurance plan. Compare plans, understand riders, and find the best coverage.",
+    title: "Insurance Education",
+    description: "Understand how term insurance and health insurance work in India. Learn about coverage, claims, and policy selection.",
     icon: Shield,
     color: "#1e40af",
     href: "/term-insurance",
     links: [
-      { label: "Complete Guide", href: "/term-insurance" },
-      { label: "Best Plans", href: "/term-insurance/best-plans" },
-      { label: "Premium Calculator", href: "/term-insurance/premium-calculator" },
-      { label: "Claim Settlement Ratio", href: "/term-insurance/claim-settlement-ratio" },
+      { label: "Term Insurance Guide", href: "/term-insurance" },
+      { label: "Health Insurance Guide", href: "/health-insurance" },
+      { label: "Understanding Claim Ratios", href: "/term-insurance/claim-settlement-ratio" },
+      { label: "Claim Process Explained", href: "/health-insurance/claim-process" },
     ],
   },
   {
-    title: "Health Insurance",
-    description: "Protect yourself and your family from rising medical costs. Compare health insurance policies and find comprehensive coverage.",
-    icon: Heart,
-    color: "#dc2626",
-    href: "/health-insurance",
+    title: "Tax Education",
+    description: "Learn about income tax in India - tax slabs, deductions, exemptions, and legal ways to save tax under the Income Tax Act.",
+    icon: Receipt,
+    color: "#059669",
+    href: "/tax",
     links: [
-      { label: "Complete Guide", href: "/health-insurance" },
-      { label: "Best Plans", href: "/health-insurance/best-plans" },
-      { label: "For Parents & Seniors", href: "/health-insurance/for-parents-seniors" },
-      { label: "Claim Process", href: "/health-insurance/claim-process" },
+      { label: "Complete Tax Guide", href: "/tax" },
+      { label: "Section 80C Explained", href: "/tax/section-80c" },
+      { label: "Old vs New Tax Regime", href: "/tax/old-vs-new-regime" },
+      { label: "Capital Gains Tax", href: "/tax/capital-gains-shares" },
     ],
   },
   {
@@ -58,8 +58,8 @@ const categories = [
     ],
   },
   {
-    title: "Investments",
-    description: "Start your investment journey with confidence. Learn about SIPs, mutual funds, retirement planning, and wealth creation strategies.",
+    title: "Personal Finance",
+    description: "Build financial literacy - budgeting, saving, investing basics, retirement planning, and wealth creation fundamentals.",
     icon: TrendingUp,
     color: "#7c3aed",
     href: "/investing",
@@ -67,12 +67,13 @@ const categories = [
       { label: "Personal Finance Basics", href: "/investing" },
       { label: "What is SIP", href: "/investing/what-is-sip" },
       { label: "Best Mutual Funds", href: "/investing/best-mutual-funds-beginners" },
+      { label: "Emergency Fund Guide", href: "/investing/emergency-fund" },
       { label: "Retirement Planning", href: "/investing/retirement-planning" },
     ],
   },
   {
     title: "Tools & Calculators",
-    description: "Make informed financial decisions with our interactive calculators. Plan investments, compare insurance, and optimize your taxes.",
+    description: "Learn how financial calculations work. Make informed financial decisions with our interactive calculators. Plan investments, compare insurance, and optimize your taxes.",
     icon: Calculator,
     color: "#ea580c",
     href: "/tools/compare-term-insurance",
@@ -81,6 +82,7 @@ const categories = [
       { label: "EMI Calculator", href: "/tools/emi-calculator" },
       { label: "Tax Saving Planner", href: "/tools/tax-saving-planner" },
       { label: "Financial Health Check", href: "/tools/financial-health-check" },
+      { label: "Coverage Estimator", href: "/tools/term-coverage-calculator" },
     ],
   },
 ];
@@ -117,19 +119,19 @@ const featuredTools = [
 ];
 
 const stats = [
-  { label: "Pages of Content", value: "50+", icon: Award },
-  { label: "Financial Tools", value: "10+", icon: Calculator },
-  { label: "Insurance Plans Compared", value: "100+", icon: Shield },
-  { label: "Tax Saving Tips", value: "50+", icon: Receipt },
+  { label: "Educational Articles", value: "50+", icon: BookOpen },
+  { label: "Learning Tools", value: "8+", icon: Calculator },
+  { label: "Topics Covered", value: "25+", icon: Target },
+  { label: "FAQs Answered", value: "100+", icon: GraduationCap },
 ];
 
 const features = [
-  "Comprehensive guides written by financial experts",
-  "Easy-to-use calculators for informed decisions",
-  "Unbiased comparisons of insurance plans",
-  "Up-to-date tax regulations and slabs",
-  "Free to use with no registration required",
-  "Trusted by thousands of Indian investors",
+  "Comprehensive educational content for beginners to advanced learners",
+  "Unbiased information without any product promotion",
+  "Easy-to-understand language with practical examples",
+  "Up-to-date information on Indian tax laws and regulations",
+  "Free to access - no registration or payment required",
+  "Coverage of common mistakes and how to avoid them",
 ];
 
 export default function HomePage() {
@@ -141,17 +143,23 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <Badge className="bg-white/20 text-white border-0">
-                India's #1 Finance Education Platform
+                India's #1 Finance, Tax Education Platform
+                Our Mission
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Your Complete Guide to{" "}
                 <span className="text-yellow-300">Finance, Insurance & Tax</span>{" "}
                 in India
+                <span className="text-yellow-300">Free Financial Education for Every Indian</span>{" "}
               </h1>
               <p className="text-lg md:text-xl text-blue-100 max-w-xl">
                 Make informed financial decisions with our comprehensive guides, 
-                comparison tools, and interactive calculators. Expert advice on 
-                insurance, investments, and tax planning.
+                comparison tools, and interactive calculators. A free educational 
+                resource to help Indians understand personal finance, insurance concepts,
+                 and taxation. No products sold, no hidden agenda - just unbiased knowledge.
+                . SabPataKaro is a free educational platform dedicated to improving financial
+                literacy in India.
+                We believe everyone deserves access to unbiased financial knowledge.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="cta-button text-white">
@@ -173,11 +181,11 @@ export default function HomePage() {
                 <div className="relative bg-white/10 backdrop-blur rounded-3xl p-8 space-y-6">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full bg-[#059669] flex items-center justify-center">
-                      <CheckCircle className="h-6 w-6 text-white" />
+                      <BookOpen className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold">Smart Tax Planning</p>
-                      <p className="text-sm text-blue-100">Save up to ₹1.5 Lakh under 80C</p>
+                      <p className="font-semibold">Tax Education</p>
+                      <p className="text-sm text-blue-100">Learn about deductions & exemptions</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -185,8 +193,8 @@ export default function HomePage() {
                       <Shield className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold">Term Insurance</p>
-                      <p className="text-sm text-blue-100">₹1 Cr cover from ₹490/month</p>
+                      <p className="font-semibold">Insurance Concepts</p>
+                      <p className="text-sm text-blue-100">Understand coverage, claims & policies</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -194,21 +202,35 @@ export default function HomePage() {
                       <TrendingUp className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold">SIP Investments</p>
-                      <p className="text-sm text-blue-100">Start with just ₹500/month</p>
+                      <p className="font-semibold">Investment Basics</p>
+                      <p className="text-sm text-blue-100">Learn about SIPs, mutual funds & more</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full bg-[#dc2626] flex items-center justify-center">
-                      <Heart className="h-6 w-6 text-white" />
+                    <div className="w-12 h-12 rounded-full bg-[#ea580c] flex items-center justify-center">
+                      <Calculator className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold">Health Insurance</p>
-                      <p className="text-sm text-blue-100">Cashless treatment at 10,000+ hospitals</p>
+                      <p className="font-semibold">Educational Tools</p>
+                      <p className="text-sm text-blue-100">Learn how calculations work</p>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Important Notice */}
+      <section className="bg-amber-50 border-b border-amber-200">
+        <div className="container px-4 md:px-6 py-4">
+          <div className="flex items-start gap-3">
+            <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" />
+            <div className="text-sm text-amber-800">
+              <strong>Educational Purpose Only:</strong> This website provides general financial education and information. 
+              We do not sell insurance, offer financial advice, or recommend specific products. 
+              Always consult qualified professionals before making financial decisions.
             </div>
           </div>
         </div>
@@ -352,7 +374,7 @@ export default function HomePage() {
               <span className="gradient-text">Indian Investors</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              FinanceTaxPro is your reliable partner for all financial decisions. 
+              SabPataKaro is your reliable partner for all financial decisions. 
               Our expert-researched content helps you navigate the complex world 
               of insurance, taxes, and investments with confidence.
             </p>
@@ -365,27 +387,27 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
-            <Card className="p-6 text-center">
-              <Users className="h-8 w-8 text-[#1e40af] mx-auto mb-3" />
-              <p className="text-2xl font-bold">50K+</p>
-              <p className="text-sm text-muted-foreground">Monthly Users</p>
-            </Card>
-            <Card className="p-6 text-center">
-              <Star className="h-8 w-8 text-yellow-500 mx-auto mb-3" />
-              <p className="text-2xl font-bold">4.8/5</p>
-              <p className="text-sm text-muted-foreground">User Rating</p>
-            </Card>
-            <Card className="p-6 text-center">
-              <Clock className="h-8 w-8 text-[#059669] mx-auto mb-3" />
-              <p className="text-2xl font-bold">24/7</p>
-              <p className="text-sm text-muted-foreground">Support</p>
-            </Card>
-            <Card className="p-6 text-center">
-              <Award className="h-8 w-8 text-[#7c3aed] mx-auto mb-3" />
-              <p className="text-2xl font-bold">Expert</p>
-              <p className="text-sm text-muted-foreground">Curated Content</p>
-            </Card>
+            <div className="grid grid-cols-2 gap-4">
+              <Card className="p-6 text-center">
+                <BookOpen className="h-8 w-8 text-[#1e40af] mx-auto mb-3" />
+                <p className="text-2xl font-bold">Free</p>
+                <p className="text-sm text-muted-foreground">Forever</p>
+              </Card>
+              <Card className="p-6 text-center">
+                <Award className="h-8 w-8 text-[#7c3aed] mx-auto mb-3" />
+                <p className="text-2xl font-bold">Quality</p>
+                <p className="text-sm text-muted-foreground">Content</p>
+              </Card>
+              <Card className="p-6 text-center">
+                <Target className="h-8 w-8 text-[#059669] mx-auto mb-3" />
+                <p className="text-2xl font-bold">Unbiased</p>
+                <p className="text-sm text-muted-foreground">Information</p>
+              </Card>
+              <Card className="p-6 text-center">
+                <Clock className="h-8 w-8 text-[#ea580c] mx-auto mb-3" />
+                <p className="text-2xl font-bold">Updated</p>
+                <p className="text-sm text-muted-foreground">Regularly</p>
+              </Card>
           </div>
         </div>
       </section>
@@ -394,22 +416,22 @@ export default function HomePage() {
       <section className="container px-4 md:px-6 pb-16 md:pb-20">
         <div className="hero-gradient rounded-2xl text-white text-center py-16 px-6">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to Take Control of Your Finances?
+            Ready to Improve Your Financial Knowledge?
           </h2>
           <p className="text-lg text-blue-100 max-w-2xl mx-auto mb-8">
-            Start your journey to financial freedom today. Explore our comprehensive 
-            guides and use our calculators to make informed decisions.
+            Start your journey to financial literacy today. Our comprehensive guides 
+            and educational tools are free for everyone.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="cta-button text-white">
               <Link href="/term-insurance">
-                Get Started with Insurance
-                <ArrowRight className="ml-2 h-4 w-4" />
+                <BookOpen className="mr-2 h-4 w-4" />
+                Start Learning Now
               </Link>
             </Button>
             <Button asChild size="lg" variant="secondary">
-              <Link href="/tax">
-                Plan Your Taxes
+              <Link href="/tools/financial-health-check">
+                Check Financial Health
               </Link>
             </Button>
           </div>
