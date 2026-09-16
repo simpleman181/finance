@@ -2,94 +2,16 @@ import { Metadata } from "next";
 import { HeroSection } from "@/components/shared/hero-section";
 import { FAQAccordion } from "@/components/shared/faq-accordion";
 import { RelatedPages } from "@/components/shared/related-pages";
-import { CTASection } from "@/components/shared/cta-section";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
-import {
-  Heart,
-  Shield,
-  IndianRupee,
-  CheckCircle,
-  Star,
-  ArrowRight,
-  Users,
-  Building,
-  Award,
-} from "lucide-react";
-import Link from "next/link";
+import { InsurerLinks } from "@/components/shared/insurer-links";
+import { Card, CardContent } from "@/components/ui/card";
+import { Heart, Shield, IndianRupee, Users } from "lucide-react";
+import { healthInsurers } from "@/lib/insurer-links";
 
 export const metadata: Metadata = {
-  title: "Best Health Insurance Plans in India 2024 | Compare & Review",
-  description: "Compare the best health insurance plans in India from top insurers like Star Health, HDFC Ergo, ICICI Lombard. Compare coverage, premiums, features, and claim ratios.",
-  keywords: ["best health insurance India", "health insurance comparison", "top mediclaim policies", "Star Health", "HDFC Ergo health insurance"],
+  title: "Health Insurance Plans in India | Educational Guide",
+  description: "Learn how health insurance plans work in India, what factors to evaluate, and how to choose the right coverage. Educational information only — no product recommendations or ratings.",
+  keywords: ["health insurance India", "how health insurance works", "health insurance guide", "choosing health insurance"],
 };
-
-const topPlans = [
-  {
-    insurer: "Star Health",
-    plan: "Family Health Optima",
-    sumInsured: "₹10-25 L",
-    premium: "₹8,000-15,000",
-    claimRatio: 82.4,
-    network: 14000,
-    features: ["No claim bonus up to 50%", "No pre-medical check-up till 50 years", "Automatic restoration", "Cover for day care procedures"],
-    rating: 4.7,
-    color: "#dc2626",
-  },
-  {
-    insurer: "HDFC Ergo",
-    plan: "my:health Suraksha",
-    sumInsured: "₹5-75 L",
-    premium: "₹7,000-18,000",
-    claimRatio: 86.5,
-    network: 12000,
-    features: ["Daily cash benefit", "No room rent limit", "No claim bonus", "Vaccination cover"],
-    rating: 4.6,
-    color: "#1e40af",
-  },
-  {
-    insurer: "ICICI Lombard",
-    plan: "Health AdvantEDGE",
-    sumInsured: "₹3-1 Cr",
-    premium: "₹6,500-20,000",
-    claimRatio: 84.2,
-    network: 11000,
-    features: ["Global coverage", "Wellness rewards", "OPD cover", "No sub-limits"],
-    rating: 4.6,
-    color: "#059669",
-  },
-  {
-    insurer: "Care Health",
-    plan: "Care Supreme",
-    sumInsured: "₹5-1 Cr",
-    premium: "₹7,500-16,000",
-    claimRatio: 85.3,
-    network: 15000,
-    features: ["Unlimited automatic restoration", "No room rent capping", "Annual health checkup", "No claim bonus 100%"],
-    rating: 4.5,
-    color: "#7c3aed",
-  },
-  {
-    insurer: "Niva Bupa",
-    plan: "Health Companion",
-    sumInsured: "₹5-1 Cr",
-    premium: "₹8,000-17,000",
-    claimRatio: 83.1,
-    network: 10000,
-    features: ["OPD expenses cover", "International coverage", "Wellness program", "Unlimited recharge"],
-    rating: 4.5,
-    color: "#ea580c",
-  },
-];
 
 const comparisonFactors = [
   {
@@ -120,8 +42,8 @@ const comparisonFactors = [
 
 const faqs = [
   {
-    question: "Which is the best health insurance company in India?",
-    answer: "There's no single best company as it depends on your needs. Star Health is known for wide network and comprehensive coverage. HDFC Ergo offers good digital experience. ICICI Lombard has global coverage options. Consider claim settlement ratio, network hospitals in your area, premium, and specific features when choosing.",
+    question: "How do I choose a health insurance company in India?",
+    answer: "There's no single best company for everyone — it depends on your needs. Consider claim settlement ratio, network hospitals in your area, premium for your required sum insured, waiting periods, and specific features like room rent limits or co-pay clauses. Visit a few insurers' official sites to compare current plans before deciding.",
   },
   {
     question: "Is cashless treatment better than reimbursement?",
@@ -149,141 +71,28 @@ const relatedPages = [
   { title: "Complete Health Insurance Guide", description: "Everything about health insurance", href: "/health-insurance", icon: <Heart className="h-5 w-5" /> },
   { title: "How Much Cover", description: "Calculate your coverage need", href: "/health-insurance/how-much-cover", icon: <IndianRupee className="h-5 w-5" /> },
   { title: "Family Floater vs Individual", description: "Choose the right plan type", href: "/health-insurance/individual-vs-family-floater", icon: <Users className="h-5 w-5" /> },
-  { title: "Compare Plans", description: "Compare health insurance plans", href: "/tools/compare-health-insurance", icon: <Shield className="h-5 w-5" /> },
 ];
 
 export default function BestPlansPage() {
   return (
     <div>
       <HeroSection
-        badge="Plan Comparison"
-        title="Best Health Insurance Plans"
-        titleHighlight="in India 2024"
-        description="Compare the top health insurance plans from leading insurers. Analyze coverage, premiums, claim ratios, and find the perfect plan for your family's health protection."
-        primaryCta={{ label: "Compare Plans", href: "/tools/compare-health-insurance" }}
-        secondaryCta={{ label: "Calculate Premium", href: "/health-insurance/premium-calculator" }}
+        badge="Educational Guide"
+        title="Understanding Health Insurance"
+        titleHighlight="Plans in India"
+        description="Learn what to look for in a health insurance plan and how to evaluate options from different insurers to find the right coverage for your family. This page doesn't rank or recommend specific products."
+        primaryCta={{ label: "Calculate Premium", href: "/health-insurance/premium-calculator" }}
+        secondaryCta={{ label: "Health Insurance Guide", href: "/health-insurance" }}
         variant="gradient"
       />
 
       <div className="container px-4 md:px-6 py-12">
-        {/* Top Plans Table */}
-        <section className="mb-12">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Top Health Insurance Plans Comparison
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Compare leading plans based on coverage, features, and value for money
-            </p>
-          </div>
-
-          <Card className="overflow-hidden">
-            <div className="overflow-x-auto">
-              <Table>
-                <TableHeader>
-                  <TableRow className="bg-slate-50">
-                    <TableHead>Insurer</TableHead>
-                    <TableHead>Plan Name</TableHead>
-                    <TableHead className="text-center">Sum Insured</TableHead>
-                    <TableHead className="text-center">Network</TableHead>
-                    <TableHead className="text-center">Claim Ratio</TableHead>
-                    <TableHead className="text-center">Rating</TableHead>
-                    <TableHead></TableHead>
-                  </TableRow>
-                </TableHeader>
-                <TableBody>
-                  {topPlans.map((plan, index) => (
-                    <TableRow key={index} className="hover:bg-slate-50">
-                      <TableCell className="font-medium">{plan.insurer}</TableCell>
-                      <TableCell>{plan.plan}</TableCell>
-                      <TableCell className="text-center">{plan.sumInsured}</TableCell>
-                      <TableCell className="text-center">{plan.network.toLocaleString()}+</TableCell>
-                      <TableCell className="text-center">
-                        <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200">
-                          {plan.claimRatio}%
-                        </Badge>
-                      </TableCell>
-                      <TableCell className="text-center">
-                        <div className="flex items-center justify-center gap-1">
-                          <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                          {plan.rating}
-                        </div>
-                      </TableCell>
-                      <TableCell>
-                        <Button size="sm" asChild>
-                          <Link href="/tools/compare-health-insurance">View</Link>
-                        </Button>
-                      </TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-            </div>
-          </Card>
-        </section>
-
-        {/* Plan Details */}
-        <section className="mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
-            Featured Plans Detailed Review
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {topPlans.slice(0, 3).map((plan, index) => (
-              <Card key={index} className="h-full border-2" style={{ borderColor: plan.color }}>
-                <CardHeader style={{ backgroundColor: `${plan.color}10` }}>
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <CardTitle>{plan.insurer}</CardTitle>
-                      <p className="text-sm text-muted-foreground">{plan.plan}</p>
-                    </div>
-                    <Badge style={{ backgroundColor: plan.color }} className="text-white">
-                      <Star className="h-3 w-3 mr-1 fill-white" /> {plan.rating}
-                    </Badge>
-                  </div>
-                </CardHeader>
-                <CardContent className="pt-6">
-                  <div className="space-y-4">
-                    <div className="grid grid-cols-2 gap-4 text-sm">
-                      <div>
-                        <p className="text-muted-foreground">Sum Insured</p>
-                        <p className="font-semibold">{plan.sumInsured}</p>
-                      </div>
-                      <div>
-                        <p className="text-muted-foreground">Premium</p>
-                        <p className="font-semibold">{plan.premium}/year</p>
-                      </div>
-                    </div>
-                    <div>
-                      <p className="text-sm text-muted-foreground mb-2">Key Features:</p>
-                      <ul className="space-y-1">
-                        {plan.features.map((feature, i) => (
-                          <li key={i} className="flex items-center gap-2 text-sm">
-                            <CheckCircle className="h-4 w-4 text-green-600" />
-                            {feature}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    <Button className="w-full" style={{ backgroundColor: plan.color }} asChild>
-                      <Link href="/tools/compare-health-insurance">
-                        Compare Now
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </Link>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
-
         {/* Comparison Factors */}
         <section className="mb-12">
           <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
             How to Compare Health Insurance Plans
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {comparisonFactors.map((factor, index) => (
               <Card key={index}>
@@ -296,19 +105,18 @@ export default function BestPlansPage() {
           </div>
         </section>
 
+        {/* Outbound insurer links */}
+        <InsurerLinks
+          title="Explore Health Plans Directly From Insurers"
+          description="See current plans, coverage, and premiums on each insurer's own website."
+          insurers={healthInsurers}
+        />
+
         {/* FAQs */}
         <FAQAccordion faqs={faqs} title="Frequently Asked Questions" />
 
         {/* Related Pages */}
         <RelatedPages title="Learn More About Health Insurance" pages={relatedPages} />
-
-        {/* CTA */}
-        <CTASection
-          title="Compare Plans Side by Side"
-          description="Use our comparison tool to analyze multiple plans, check premiums, and find the best health insurance for your family."
-          primaryCta={{ label: "Compare Now", href: "/tools/compare-health-insurance" }}
-          secondaryCta={{ label: "Get Quote", href: "/health-insurance/premium-calculator" }}
-        />
       </div>
     </div>
   );
