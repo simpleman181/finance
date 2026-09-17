@@ -1,0 +1,21 @@
+{
+  "name": "SabPataKaro - Taxes, Insurance, Money, Passport, PAN, Aadhar & More",
+  "short_name": "SabPataKaro",
+  "description": "Your complete guide to Taxes, Insurance, Money Management, Investment, Passport, PAN, Aadhar, Driving License in India. Free calculators, guides, and official links.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
