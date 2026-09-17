@@ -336,7 +336,7 @@ export default function AadharPage() {
                 Aadhar Update
               </a>
             </Button>
-            <Button AsChild variant="outline" className="h-auto py-4 justify-start">
+            <Button asChild variant="outline" className="h-auto py-4 justify-start">
               <a href="https://myaadhaar.uidai.gov.in/lock-unlock-aadhaar" target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="mr-2 h-4 w-4" />
                 Lock Biometrics
