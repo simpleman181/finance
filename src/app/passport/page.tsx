@@ -321,13 +321,13 @@ export default function PassportPage() {
               </a>
             </Button>
             <Button asChild variant="outline" className="h-auto py-4 justify-start">
-              <a href="https://www.passportindia.gov.in/AppOnlineProject/online/apptAvailStatus" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.passportindia.gov.in/psp/checkAppointmentAvailibility" target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="mr-2 h-4 w-4" />
                 Check Appointment Availability
               </a>
             </Button>
             <Button AsChild variant="outline" className="h-auto py-4 justify-start">
-              <a href="https://www.passportindia.gov.in/AppOnlineProject/trackStatus" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.passportindia.gov.in/psp/trackApplicationService" target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="mr-2 h-4 w-4" />
                 Track Application Status
               </a>
