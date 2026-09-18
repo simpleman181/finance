@@ -76,7 +76,7 @@ const relatedPages = [
   { title: "Complete Health Insurance Guide", description: "Everything about health insurance", href: "/health-insurance", icon: <Heart className="h-5 w-5" /> },
   { title: "Waiting Period Explained", description: "Understand waiting periods", href: "/health-insurance/waiting-period", icon: <Clock className="h-5 w-5" /> },
   { title: "Co-payment & Sub-limits", description: "Understand policy limits", href: "/health-insurance/copayment-sublimits", icon: <IndianRupee className="h-5 w-5" /> },
-  { title: "Compare Plans", description: "Compare health insurance plans", href: "/tools/compare-health-insurance", icon: <Shield className="h-5 w-5" /> },
+  { title: "Explore Insurers", description: "See health insurers' official plans", href: "/health-insurance/best-plans", icon: <Shield className="h-5 w-5" /> },
 ];
 
 export default function ForParentsSeniorsPage() {
@@ -87,7 +87,7 @@ export default function ForParentsSeniorsPage() {
         title="Health Insurance for"
         titleHighlight="Parents & Senior Citizens"
         description="Healthcare needs increase with age. Get comprehensive coverage for your parents with plans designed for senior citizens. Understand waiting periods, co-payment, and find the best policy."
-        primaryCta={{ label: "Compare Senior Plans", href: "/tools/compare-health-insurance" }}
+        primaryCta={{ label: "Explore Insurers", href: "/health-insurance/best-plans" }}
         secondaryCta={{ label: "Calculate Premium", href: "/health-insurance/premium-calculator" }}
         variant="gradient"
       />
@@ -243,7 +243,7 @@ export default function ForParentsSeniorsPage() {
         <CTASection
           title="Protect Your Parents' Health Today"
           description="Don't wait for a medical emergency. Get comprehensive health insurance for your parents now while options are still available."
-          primaryCta={{ label: "Compare Plans", href: "/tools/compare-health-insurance" }}
+          primaryCta={{ label: "Explore Insurers", href: "/health-insurance/best-plans" }}
           secondaryCta={{ label: "Calculate Premium", href: "/health-insurance/premium-calculator" }}
         />
       </div>

@@ -91,7 +91,7 @@ const faqs = [
 
 const relatedPages = [
   { title: "Complete Term Insurance Guide", description: "Everything you need to know about term insurance", href: "/term-insurance", icon: <Calculator className="h-5 w-5" /> },
-  { title: "Best Term Insurance Plans", description: "Compare top term insurance plans in India", href: "/term-insurance/best-plans", icon: <TrendingUp className="h-5 w-5" /> },
+  { title: "Explore Insurers", description: "See term insurers' official plans", href: "/term-insurance/best-plans", icon: <TrendingUp className="h-5 w-5" /> },
   { title: "Premium Calculator", description: "Calculate your term insurance premium", href: "/term-insurance/premium-calculator", icon: <IndianRupee className="h-5 w-5" /> },
   { title: "Term Insurance for Salaried", description: "Best options for salaried employees", href: "/term-insurance/for-salaried", icon: <Users className="h-5 w-5" /> },
 ];
@@ -325,7 +325,7 @@ export default function HowMuchCoverPage() {
           title="Ready to Calculate Your Coverage?"
           description="Use our interactive coverage calculator to get a personalized recommendation based on your specific situation."
           primaryCta={{ label: "Calculate Now", href: "/tools/term-coverage-calculator" }}
-          secondaryCta={{ label: "Compare Plans", href: "/term-insurance/best-plans" }}
+          secondaryCta={{ label: "Explore Insurers", href: "/term-insurance/best-plans" }}
         />
       </div>
     </div>

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
 const relatedPages = [
   { title: "How Much Health Cover", description: "Calculate your ideal health coverage", href: "/health-insurance/how-much-cover", icon: <IndianRupee className="h-5 w-5" /> },
-  { title: "Best Health Plans", description: "Compare top health insurance policies", href: "/health-insurance/best-plans", icon: <Shield className="h-5 w-5" /> },
+  { title: "Explore Insurers", description: "See health insurers' official plans", href: "/health-insurance/best-plans", icon: <Shield className="h-5 w-5" /> },
   { title: "Individual vs Family Floater", description: "Choose the right plan type", href: "/health-insurance/individual-vs-family-floater", icon: <Users className="h-5 w-5" /> },
   { title: "For Parents & Seniors", description: "Health insurance for elderly", href: "/health-insurance/for-parents-seniors", icon: <Heart className="h-5 w-5" /> },
   { title: "Cashless Hospital Network", description: "How cashless treatment works", href: "/health-insurance/cashless-network", icon: <Building className="h-5 w-5" /> },
@@ -131,7 +131,7 @@ export default function HealthInsurancePage() {
         titleHighlight="Health Insurance in India"
         description="Rising medical costs can deplete your savings in days. Learn how health insurance protects you from financial emergencies and get the right coverage for your family's medical needs."
         primaryCta={{ label: "Calculate Coverage", href: "/health-insurance/premium-calculator" }}
-        secondaryCta={{ label: "Compare Plans", href: "/health-insurance/best-plans" }}
+        secondaryCta={{ label: "Explore Insurers", href: "/health-insurance/best-plans" }}
         variant="gradient"
       />
 
@@ -312,7 +312,7 @@ export default function HealthInsurancePage() {
         <CTASection
           title="Ready to Protect Your Family's Health?"
           description="Use our comparison tools to find the best health insurance plan. Compare coverage, premiums, and features from top insurers."
-          primaryCta={{ label: "Compare Plans", href: "/health-insurance/best-plans" }}
+          primaryCta={{ label: "Explore Insurers", href: "/health-insurance/best-plans" }}
           secondaryCta={{ label: "Calculate Premium", href: "/health-insurance/premium-calculator" }}
         />
 

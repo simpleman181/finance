@@ -221,10 +221,7 @@ export default function HealthPremiumCalculator() {
 
                   <div className="space-y-3">
                     <Button asChild className="w-full cta-button text-white">
-                      <Link href="/tools/compare-health-insurance">Compare Plans</Link>
-                    </Button>
-                    <Button asChild variant="outline" className="w-full">
-                      <Link href="/health-insurance/best-plans">View Best Plans</Link>
+                      <Link href="/health-insurance/best-plans">Explore Insurers</Link>
                     </Button>
                   </div>
                 </CardContent>

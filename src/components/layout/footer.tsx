@@ -33,7 +33,7 @@ const footerLinks = {
     links: [
       { href: "/term-insurance", label: "Term Insurance" },
       { href: "/term-insurance/how-much-cover", label: "Coverage Calculator" },
-      { href: "/term-insurance/best-plans", label: "Compare Plans" },
+      { href: "/term-insurance/best-plans", label: "Explore Insurers" },
       { href: "/health-insurance", label: "Health Insurance" },
     ],
   },

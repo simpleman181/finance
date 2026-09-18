@@ -85,7 +85,7 @@ const relatedPages = [
   { title: "Complete Health Insurance Guide", description: "Everything about health insurance", href: "/health-insurance", icon: <Heart className="h-5 w-5" /> },
   { title: "Cashless Network", description: "How cashless hospitalization works", href: "/health-insurance/cashless-network", icon: <Building className="h-5 w-5" /> },
   { title: "Waiting Period", description: "Understand waiting periods", href: "/health-insurance/waiting-period", icon: <Clock className="h-5 w-5" /> },
-  { title: "Compare Plans", description: "Compare health insurance plans", href: "/tools/compare-health-insurance", icon: <Shield className="h-5 w-5" /> },
+  { title: "Explore Insurers", description: "See health insurers' official plans", href: "/health-insurance/best-plans", icon: <Shield className="h-5 w-5" /> },
 ];
 
 export default function ClaimProcessPage() {
@@ -96,7 +96,7 @@ export default function ClaimProcessPage() {
         title="Health Insurance"
         titleHighlight="Claim Process"
         description="Step-by-step guide to filing health insurance claims. Learn the cashless and reimbursement process, required documents, and how to avoid claim rejection."
-        primaryCta={{ label: "Compare Plans", href: "/tools/compare-health-insurance" }}
+        primaryCta={{ label: "Explore Insurers", href: "/health-insurance/best-plans" }}
         secondaryCta={{ label: "Cashless Network", href: "/health-insurance/cashless-network" }}
         variant="gradient"
       />
@@ -232,10 +232,10 @@ export default function ClaimProcessPage() {
 
         {/* CTA */}
         <CTASection
-          title="Need to Compare Health Insurance?"
-          description="Find the best health insurance plan with high claim settlement ratio and comprehensive coverage."
-          primaryCta={{ label: "Compare Plans", href: "/tools/compare-health-insurance" }}
-          secondaryCta={{ label: "View Best Plans", href: "/health-insurance/best-plans" }}
+          title="Ready to Choose a Health Insurance Plan?"
+          description="Explore official plans directly from India's major health insurers."
+          primaryCta={{ label: "Explore Insurers", href: "/health-insurance/best-plans" }}
+          secondaryCta={{ label: "Calculate Premium", href: "/health-insurance/premium-calculator" }}
         />
       </div>
     </div>

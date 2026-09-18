@@ -98,7 +98,7 @@ const faqs = [
 
 const relatedPages = [
   { title: "Complete Health Insurance Guide", description: "Everything about health insurance", href: "/health-insurance", icon: <Heart className="h-5 w-5" /> },
-  { title: "Best Plans", description: "Compare top health insurance policies", href: "/health-insurance/best-plans", icon: <Shield className="h-5 w-5" /> },
+  { title: "Explore Insurers", description: "See health insurers' official plans", href: "/health-insurance/best-plans", icon: <Shield className="h-5 w-5" /> },
   { title: "Family Floater vs Individual", description: "Choose the right plan type", href: "/health-insurance/individual-vs-family-floater", icon: <Users className="h-5 w-5" /> },
   { title: "Coverage Calculator", description: "Calculate your ideal coverage", href: "/tools/health-coverage-estimator", icon: <Calculator className="h-5 w-5" /> },
 ];
@@ -112,7 +112,7 @@ export default function HowMuchCoverPage() {
         titleHighlight="Cover Do You Need?"
         description="Medical costs can spiral into lakhs. Calculate the right coverage amount based on your city, family size, and health risks. Don't be under-insured when you need it most."
         primaryCta={{ label: "Calculate Coverage", href: "/tools/health-coverage-estimator" }}
-        secondaryCta={{ label: "Compare Plans", href: "/health-insurance/best-plans" }}
+        secondaryCta={{ label: "Explore Insurers", href: "/health-insurance/best-plans" }}
         variant="gradient"
       />
 
@@ -289,7 +289,7 @@ export default function HowMuchCoverPage() {
           title="Calculate Your Ideal Coverage"
           description="Use our interactive calculator to get personalized coverage recommendation based on your specific situation."
           primaryCta={{ label: "Calculate Now", href: "/tools/health-coverage-estimator" }}
-          secondaryCta={{ label: "Compare Plans", href: "/health-insurance/best-plans" }}
+          secondaryCta={{ label: "Explore Insurers", href: "/health-insurance/best-plans" }}
         />
       </div>
     </div>

@@ -62,7 +62,7 @@ const relatedPages = [
   { title: "Complete Health Insurance Guide", description: "Everything about health insurance", href: "/health-insurance", icon: <Heart className="h-5 w-5" /> },
   { title: "Claim Process", description: "How to file health insurance claims", href: "/health-insurance/claim-process", icon: <Shield className="h-5 w-5" /> },
   { title: "Co-payment & Sub-limits", description: "Understand policy limits", href: "/health-insurance/copayment-sublimits", icon: <AlertTriangle className="h-5 w-5" /> },
-  { title: "Compare Plans", description: "Compare health insurance plans", href: "/tools/compare-health-insurance", icon: <Shield className="h-5 w-5" /> },
+  { title: "Explore Insurers", description: "See health insurers' official plans", href: "/health-insurance/best-plans", icon: <Shield className="h-5 w-5" /> },
 ];
 
 export default function CashlessNetworkPage() {
@@ -250,7 +250,7 @@ export default function CashlessNetworkPage() {
           title="Need to File a Claim?"
           description="Understand the complete claim process for both cashless and reimbursement claims."
           primaryCta={{ label: "Claim Process Guide", href: "/health-insurance/claim-process" }}
-          secondaryCta={{ label: "Compare Plans", href: "/tools/compare-health-insurance" }}
+          secondaryCta={{ label: "Explore Insurers", href: "/health-insurance/best-plans" }}
         />
       </div>
     </div>

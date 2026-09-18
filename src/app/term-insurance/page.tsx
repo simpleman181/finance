@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
 const relatedPages = [
   { title: "How Much Term Insurance Cover", description: "Calculate the ideal coverage amount for your family", href: "/term-insurance/how-much-cover", icon: <Calculator className="h-5 w-5" /> },
-  { title: "Best Term Insurance Plans", description: "Compare top term insurance plans in India", href: "/term-insurance/best-plans", icon: <Award className="h-5 w-5" /> },
+  { title: "Explore Insurers", description: "See term insurers' official plans", href: "/term-insurance/best-plans", icon: <Award className="h-5 w-5" /> },
   { title: "For Salaried Employees", description: "Best term insurance options for salaried individuals", href: "/term-insurance/for-salaried", icon: <Users className="h-5 w-5" /> },
   { title: "Term Insurance Riders", description: "Understand critical illness, accidental death riders", href: "/term-insurance/riders", icon: <Shield className="h-5 w-5" /> },
   { title: "Claim Settlement Ratio", description: "Compare claim settlement ratios of insurers", href: "/term-insurance/claim-settlement-ratio", icon: <TrendingUp className="h-5 w-5" /> },
@@ -113,7 +113,7 @@ export default function TermInsurancePage() {
         titleHighlight="Term Insurance in India"
         description="Term insurance is the most affordable way to secure your family's financial future. Get comprehensive coverage at a fraction of the cost of traditional life insurance. Learn how to choose the right plan, compare options, and make an informed decision."
         primaryCta={{ label: "Calculate Premium", href: "/term-insurance/premium-calculator" }}
-        secondaryCta={{ label: "Compare Plans", href: "/term-insurance/best-plans" }}
+        secondaryCta={{ label: "Explore Insurers", href: "/term-insurance/best-plans" }}
         variant="gradient"
       />
 
@@ -279,7 +279,7 @@ export default function TermInsurancePage() {
           title="Ready to Secure Your Family's Future?"
           description="Use our premium calculator to get instant quotes from top insurers. Compare plans and find the best coverage at the most affordable price."
           primaryCta={{ label: "Calculate Premium Now", href: "/term-insurance/premium-calculator" }}
-          secondaryCta={{ label: "Compare Plans", href: "/term-insurance/best-plans" }}
+          secondaryCta={{ label: "Explore Insurers", href: "/term-insurance/best-plans" }}
         />
 
         <ContactCTA />

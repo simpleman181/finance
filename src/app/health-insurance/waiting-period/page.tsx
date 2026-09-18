@@ -106,7 +106,7 @@ const relatedPages = [
   { title: "Complete Health Insurance Guide", description: "Everything about health insurance", href: "/health-insurance", icon: <Heart className="h-5 w-5" /> },
   { title: "For Parents & Seniors", description: "Health insurance for elderly", href: "/health-insurance/for-parents-seniors", icon: <Heart className="h-5 w-5" /> },
   { title: "Claim Process", description: "How to file claims", href: "/health-insurance/claim-process", icon: <Shield className="h-5 w-5" /> },
-  { title: "Compare Plans", description: "Compare health insurance plans", href: "/tools/compare-health-insurance", icon: <Shield className="h-5 w-5" /> },
+  { title: "Explore Insurers", description: "See health insurers' official plans", href: "/health-insurance/best-plans", icon: <Shield className="h-5 w-5" /> },
 ];
 
 export default function WaitingPeriodPage() {
@@ -117,7 +117,7 @@ export default function WaitingPeriodPage() {
         title="Waiting Period in"
         titleHighlight="Health Insurance Explained"
         description="Health insurance doesn't cover everything from day one. Understand waiting periods - when coverage starts, what's excluded initially, and how to plan your purchase."
-        primaryCta={{ label: "Compare Plans", href: "/tools/compare-health-insurance" }}
+        primaryCta={{ label: "Explore Insurers", href: "/health-insurance/best-plans" }}
         secondaryCta={{ label: "Calculate Premium", href: "/health-insurance/premium-calculator" }}
         variant="gradient"
       />
@@ -288,7 +288,7 @@ export default function WaitingPeriodPage() {
         <CTASection
           title="Start Your Coverage Early"
           description="Buy health insurance before you need it. Start serving waiting periods now so coverage is ready when you need it."
-          primaryCta={{ label: "Compare Plans", href: "/tools/compare-health-insurance" }}
+          primaryCta={{ label: "Explore Insurers", href: "/health-insurance/best-plans" }}
           secondaryCta={{ label: "Calculate Premium", href: "/health-insurance/premium-calculator" }}
         />
       </div>

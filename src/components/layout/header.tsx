@@ -35,7 +35,7 @@ const governmentServicesLinks = [
 const termInsuranceLinks = [
   { href: "/term-insurance", title: "Complete Guide", description: "Everything you need to know about term insurance" },
   { href: "/term-insurance/how-much-cover", title: "How Much Cover", description: "Calculate your ideal coverage amount" },
-  { href: "/term-insurance/best-plans", title: "Best Plans", description: "Compare top term insurance plans" },
+  { href: "/term-insurance/best-plans", title: "Explore Insurers", description: "See term insurers' official plans" },
   { href: "/term-insurance/for-salaried", title: "For Salaried", description: "Best options for salaried employees" },
   { href: "/term-insurance/riders", title: "Riders Explained", description: "Understanding term insurance riders" },
   { href: "/term-insurance/claim-settlement-ratio", title: "Claim Settlement Ratio", description: "Compare insurer claim ratios" },
@@ -45,7 +45,7 @@ const termInsuranceLinks = [
 const healthInsuranceLinks = [
   { href: "/health-insurance", title: "Complete Guide", description: "Everything about health insurance in India" },
   { href: "/health-insurance/how-much-cover", title: "How Much Cover", description: "Find your ideal health cover" },
-  { href: "/health-insurance/best-plans", title: "Best Plans", description: "Top health insurance policies compared" },
+  { href: "/health-insurance/best-plans", title: "Explore Insurers", description: "See health insurers' official plans" },
   { href: "/health-insurance/individual-vs-family-floater", title: "Individual vs Family", description: "Choose the right plan type" },
   { href: "/health-insurance/for-parents-seniors", title: "For Parents & Seniors", description: "Health insurance for elderly parents" },
   { href: "/health-insurance/claim-process", title: "Claim Process", description: "Step-by-step claim guide" },
@@ -169,7 +169,7 @@ export function Header() {
                 colorClass="text-[#1e40af]"
               />
               <NavItem 
-                title="Insurance" 
+                title="Term Insurance" 
                 icon={Shield} 
                 links={termInsuranceLinks}
                 colorClass="text-[#dc2626]"
@@ -218,7 +218,7 @@ export function Header() {
             <SheetContent side="right" className="w-[300px] sm:w-[400px] overflow-y-auto">
               <nav className="flex flex-col gap-4 mt-8">
                 <MobileNavSection title="Government Services" links={governmentServicesLinks} icon={Plane} color="text-[#1e40af]" />
-                <MobileNavSection title="Insurance" links={termInsuranceLinks} icon={Shield} color="text-[#dc2626]" />
+                <MobileNavSection title="Term Insurance" links={termInsuranceLinks} icon={Shield} color="text-[#dc2626]" />
                 <MobileNavSection title="Health" links={healthInsuranceLinks} icon={Heart} color="text-[#059669]" />
                 <MobileNavSection title="Tax" links={taxLinks} icon={Receipt} color="text-[#7c3aed]" />
                 <MobileNavSection title="Investing" links={investingLinks} icon={TrendingUp} color="text-[#ea580c]" />

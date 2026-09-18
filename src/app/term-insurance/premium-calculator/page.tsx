@@ -285,13 +285,8 @@ export default function TermPremiumCalculator() {
 
                   <div className="space-y-3">
                     <Button asChild className="w-full cta-button text-white">
-                      <Link href="/tools/compare-term-insurance">
-                        Compare Plans
-                      </Link>
-                    </Button>
-                    <Button asChild variant="outline" className="w-full">
                       <Link href="/term-insurance/best-plans">
-                        View Best Plans
+                        Explore Insurers
                       </Link>
                     </Button>
                   </div>
@@ -387,17 +382,17 @@ export default function TermPremiumCalculator() {
             <CardContent className="pt-6">
               <h3 className="text-xl font-bold mb-2">Ready to Buy Term Insurance?</h3>
               <p className="text-blue-100 mb-4">
-                Compare plans from top insurers and find the best coverage at the lowest premium
+                Explore official plans from India&apos;s major insurers and find the coverage that fits you
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button asChild className="bg-white text-[#1e40af] hover:bg-blue-50">
-                  <Link href="/tools/compare-term-insurance">
-                    Compare Plans Now
+                  <Link href="/term-insurance/best-plans">
+                    Explore Insurers
                   </Link>
                 </Button>
                 <Button asChild variant="outline" className="border-white text-white hover:bg-white/10">
-                  <Link href="/term-insurance/best-plans">
-                    View Best Plans
+                  <Link href="/term-insurance">
+                    Term Insurance Guide
                   </Link>
                 </Button>
               </div>

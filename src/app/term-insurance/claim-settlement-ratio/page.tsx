@@ -114,7 +114,7 @@ const faqs = [
 
 const relatedPages = [
   { title: "Complete Term Insurance Guide", description: "Everything about term insurance", href: "/term-insurance", icon: <Shield className="h-5 w-5" /> },
-  { title: "Best Plans", description: "Compare top term insurance plans", href: "/term-insurance/best-plans", icon: <Award className="h-5 w-5" /> },
+  { title: "Explore Insurers", description: "See term insurers' official plans", href: "/term-insurance/best-plans", icon: <Award className="h-5 w-5" /> },
   { title: "Common Mistakes", description: "Avoid these claim rejection reasons", href: "/term-insurance/mistakes", icon: <AlertTriangle className="h-5 w-5" /> },
   { title: "Premium Calculator", description: "Calculate your premium", href: "/term-insurance/premium-calculator", icon: <IndianRupee className="h-5 w-5" /> },
 ];
@@ -127,8 +127,8 @@ export default function ClaimSettlementRatioPage() {
         title="Claim Settlement Ratio"
         titleHighlight="Explained & Compared"
         description="Understand what claim settlement ratio means, why it's crucial for choosing term insurance, and compare CSR of all major insurance companies in India."
-        primaryCta={{ label: "Compare Insurers", href: "/tools/compare-term-insurance" }}
-        secondaryCta={{ label: "Best Plans", href: "/term-insurance/best-plans" }}
+        primaryCta={{ label: "Explore Insurers", href: "/term-insurance/best-plans" }}
+        secondaryCta={{ label: "Calculate Premium", href: "/term-insurance/premium-calculator" }}
         variant="gradient"
       />
 
@@ -300,8 +300,8 @@ export default function ClaimSettlementRatioPage() {
         <CTASection
           title="Choose a Reliable Insurer"
           description="Compare term insurance plans from top insurers with high claim settlement ratios. Make sure your family's claim is honored when they need it most."
-          primaryCta={{ label: "Compare Plans", href: "/tools/compare-term-insurance" }}
-          secondaryCta={{ label: "View Best Plans", href: "/term-insurance/best-plans" }}
+          primaryCta={{ label: "Explore Insurers", href: "/term-insurance/best-plans" }}
+          secondaryCta={{ label: "Calculate Premium", href: "/term-insurance/premium-calculator" }}
         />
       </div>
     </div>

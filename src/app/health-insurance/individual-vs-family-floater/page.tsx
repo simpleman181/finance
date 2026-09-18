@@ -123,7 +123,7 @@ const relatedPages = [
   { title: "Complete Health Insurance Guide", description: "Everything about health insurance", href: "/health-insurance", icon: <Heart className="h-5 w-5" /> },
   { title: "How Much Cover", description: "Calculate your coverage need", href: "/health-insurance/how-much-cover", icon: <IndianRupee className="h-5 w-5" /> },
   { title: "For Parents & Seniors", description: "Health insurance for elderly", href: "/health-insurance/for-parents-seniors", icon: <Users className="h-5 w-5" /> },
-  { title: "Compare Plans", description: "Compare health insurance plans", href: "/tools/compare-health-insurance", icon: <Shield className="h-5 w-5" /> },
+  { title: "Explore Insurers", description: "See health insurers' official plans", href: "/health-insurance/best-plans", icon: <Shield className="h-5 w-5" /> },
 ];
 
 export default function IndividualVsFloaterPage() {
@@ -134,7 +134,7 @@ export default function IndividualVsFloaterPage() {
         title="Individual vs Family Floater"
         titleHighlight="Health Insurance"
         description="Confused between individual health insurance and family floater? Understand the key differences, pros and cons, and which option suits your family better."
-        primaryCta={{ label: "Compare Plans", href: "/tools/compare-health-insurance" }}
+        primaryCta={{ label: "Explore Insurers", href: "/health-insurance/best-plans" }}
         secondaryCta={{ label: "Calculate Premium", href: "/health-insurance/premium-calculator" }}
         variant="gradient"
       />
@@ -340,7 +340,7 @@ export default function IndividualVsFloaterPage() {
         <CTASection
           title="Choose the Right Coverage for Your Family"
           description="Compare health insurance plans and find the best option for your family's needs and budget."
-          primaryCta={{ label: "Compare Plans", href: "/tools/compare-health-insurance" }}
+          primaryCta={{ label: "Explore Insurers", href: "/health-insurance/best-plans" }}
           secondaryCta={{ label: "Calculate Premium", href: "/health-insurance/premium-calculator" }}
         />
       </div>

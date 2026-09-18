@@ -34,7 +34,7 @@ const guideCategories = [
     guides: [
       { title: "Term Insurance Basics", href: "/term-insurance", description: "Complete introduction to term insurance" },
       { title: "How Much Cover Do You Need?", href: "/term-insurance/how-much-cover", description: "Calculate your ideal coverage" },
-      { title: "Best Plans Comparison", href: "/term-insurance/best-plans", description: "Compare top term insurance plans" },
+      { title: "Explore Term Insurers", href: "/term-insurance/best-plans", description: "See term insurers' official plans" },
       { title: "Premium Calculator", href: "/term-insurance/premium-calculator", description: "Calculate your premium instantly" },
       { title: "Claim Settlement Ratio", href: "/term-insurance/claim-settlement-ratio", description: "Understand CSR and its importance" },
       { title: "Riders Explained", href: "/term-insurance/riders", description: "Critical illness, accidental death & more" },

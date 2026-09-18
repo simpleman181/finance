@@ -349,13 +349,7 @@ export default function DrivingLicensePage() {
             <Button asChild variant="outline" className="h-auto py-4 justify-start">
               <a href="https://sarathi.parivahan.gov.in/sarathiservice/" target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="mr-2 h-4 w-4" />
-                Sarathi (DL Services)
-              </a>
-            </Button>
-            <Button asChild variant="outline" className="h-auto py-4 justify-start">
-              <a href="https://parivahan.gov.in/rcdlstatus/" target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="mr-2 h-4 w-4" />
-                Check DL Status
+                Sarathi Parivahan (DL Services &amp; Status)
               </a>
             </Button>
           </div>

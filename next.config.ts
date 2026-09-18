@@ -7,6 +7,20 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,
   },
   reactStrictMode: false,
+  async redirects() {
+    return [
+      {
+        source: "/tools/compare-term-insurance",
+        destination: "/term-insurance/best-plans",
+        permanent: true,
+      },
+      {
+        source: "/tools/compare-health-insurance",
+        destination: "/health-insurance/best-plans",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

@@ -73,9 +73,8 @@ const faqs = [
 
 const relatedPages = [
   { title: "Complete Health Insurance Guide", description: "Everything about health insurance", href: "/health-insurance", icon: <Heart className="h-5 w-5" /> },
-  { title: "Best Plans", description: "Compare top health insurance policies", href: "/health-insurance/best-plans", icon: <Shield className="h-5 w-5" /> },
+  { title: "Explore Insurers", description: "See health insurers' official plans", href: "/health-insurance/best-plans", icon: <Shield className="h-5 w-5" /> },
   { title: "Waiting Period", description: "Understand waiting periods", href: "/health-insurance/waiting-period", icon: <Info className="h-5 w-5" /> },
-  { title: "Compare Plans", description: "Compare health insurance plans", href: "/tools/compare-health-insurance", icon: <Shield className="h-5 w-5" /> },
 ];
 
 export default function CopaymentSublimitsPage() {
@@ -86,8 +85,8 @@ export default function CopaymentSublimitsPage() {
         title="Co-Payment & Sub-Limits"
         titleHighlight="in Health Insurance"
         description="These terms can significantly impact your claim amount. Understand how co-pay and sub-limits work, and choose policies wisely to avoid surprise expenses during hospitalization."
-        primaryCta={{ label: "Compare Plans", href: "/tools/compare-health-insurance" }}
-        secondaryCta={{ label: "Best Plans", href: "/health-insurance/best-plans" }}
+        primaryCta={{ label: "Explore Insurers", href: "/health-insurance/best-plans" }}
+        secondaryCta={{ label: "Calculate Premium", href: "/health-insurance/premium-calculator" }}
         variant="gradient"
       />
 
@@ -242,8 +241,8 @@ export default function CopaymentSublimitsPage() {
         <CTASection
           title="Find Plans Without Hidden Limits"
           description="Compare health insurance plans with clear terms. Choose policies with no sub-limits and co-pay options that suit your budget."
-          primaryCta={{ label: "Compare Plans", href: "/tools/compare-health-insurance" }}
-          secondaryCta={{ label: "View Best Plans", href: "/health-insurance/best-plans" }}
+          primaryCta={{ label: "Explore Insurers", href: "/health-insurance/best-plans" }}
+          secondaryCta={{ label: "Calculate Premium", href: "/health-insurance/premium-calculator" }}
         />
       </div>
     </div>

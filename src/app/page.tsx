@@ -77,7 +77,7 @@ const categories = [
     description: "Learn how financial calculations work. Make informed financial decisions with our interactive calculators. Plan investments, compare insurance, and optimize your taxes.",
     icon: Calculator,
     color: "#ea580c",
-    href: "/tools/compare-term-insurance",
+    href: "/tools/sip-return-calculator",
     links: [
       { label: "SIP Calculator", href: "/tools/sip-return-calculator" },
       { label: "EMI Calculator", href: "/tools/emi-calculator" },

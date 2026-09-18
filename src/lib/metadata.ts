@@ -296,20 +296,10 @@ export const pageMetadata: Record<string, PageMetadata> = {
     description: "Calculate how much term insurance coverage you need. Based on income, expenses, liabilities, and future financial goals.",
     keywords: ["term coverage calculator", "sum assured calculator", "life insurance coverage", "term insurance needs"],
   },
-  "/tools/compare-term-insurance": {
-    title: "Term Insurance Comparison Tool - Compare Plans Side by Side | SabPataKaro",
-    description: "Compare term insurance plans side by side. Understand key differences in features, premiums, and benefits to make an informed decision.",
-    keywords: ["term insurance comparison", "compare term plans", "life insurance comparison tool"],
-  },
   "/tools/health-coverage-estimator": {
     title: "Health Insurance Coverage Estimator - Find Your Ideal Cover | SabPataKaro",
     description: "Calculate how much health insurance coverage you need based on family size, location, lifestyle, and medical history.",
     keywords: ["health coverage estimator", "health insurance calculator", "sum insured calculator"],
-  },
-  "/tools/compare-health-insurance": {
-    title: "Health Insurance Comparison Tool - Compare Plans Side by Side | SabPataKaro",
-    description: "Compare health insurance plans side by side. Understand differences in coverage, premiums, exclusions, and network hospitals.",
-    keywords: ["health insurance comparison", "compare health plans", "medical insurance comparison"],
   },
   "/tools/tax-saving-planner": {
     title: "Tax Saving Planner - Optimize Your Tax Deductions | SabPataKaro",

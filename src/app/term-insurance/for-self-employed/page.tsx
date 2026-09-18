@@ -181,7 +181,7 @@ export default function ForSelfEmployedPage() {
         titleHighlight="Self-Employed & Business Owners"
         description="As a business owner or freelancer, you don't have employer-provided insurance. Learn how to protect your family and business with the right term insurance coverage."
         primaryCta={{ label: "Calculate Coverage", href: "/tools/term-coverage-calculator" }}
-        secondaryCta={{ label: "Compare Plans", href: "/term-insurance/best-plans" }}
+        secondaryCta={{ label: "Explore Insurers", href: "/term-insurance/best-plans" }}
         variant="gradient"
       />
 
@@ -335,7 +335,7 @@ export default function ForSelfEmployedPage() {
           title="Protect Your Business & Family"
           description="As a self-employed professional, your family's financial security depends solely on your planning. Get comprehensive term insurance coverage today."
           primaryCta={{ label: "Calculate Coverage", href: "/tools/term-coverage-calculator" }}
-          secondaryCta={{ label: "Compare Plans", href: "/term-insurance/best-plans" }}
+          secondaryCta={{ label: "Explore Insurers", href: "/term-insurance/best-plans" }}
         />
       </div>
     </div>

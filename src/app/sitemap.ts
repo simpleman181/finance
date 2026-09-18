@@ -61,9 +61,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/tools/sip-return-calculator',
     '/tools/emi-calculator',
     '/tools/term-coverage-calculator',
-    '/tools/compare-term-insurance',
     '/tools/health-coverage-estimator',
-    '/tools/compare-health-insurance',
     '/tools/tax-saving-planner',
     '/tools/financial-health-check',
   ]

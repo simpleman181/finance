@@ -129,7 +129,7 @@ const faqs = [
 
 const relatedPages = [
   { title: "Complete Term Insurance Guide", description: "Everything about term insurance", href: "/term-insurance", icon: <Shield className="h-5 w-5" /> },
-  { title: "Best Term Plans", description: "Compare top term insurance plans", href: "/term-insurance/best-plans", icon: <TrendingUp className="h-5 w-5" /> },
+  { title: "Explore Insurers", description: "See term insurers' official plans", href: "/term-insurance/best-plans", icon: <TrendingUp className="h-5 w-5" /> },
   { title: "How Much Cover", description: "Calculate ideal coverage", href: "/term-insurance/how-much-cover", icon: <Target className="h-5 w-5" /> },
   { title: "Premium Calculator", description: "Calculate your premium", href: "/term-insurance/premium-calculator", icon: <IndianRupee className="h-5 w-5" /> },
 ];
@@ -142,7 +142,7 @@ export default function VsTraditionalPage() {
         title="Term Insurance vs"
         titleHighlight="Traditional Life Insurance"
         description="Confused between term insurance and traditional plans? Understand the key differences, pros and cons, and which option is better for your financial goals."
-        primaryCta={{ label: "Compare Plans", href: "/term-insurance/best-plans" }}
+        primaryCta={{ label: "Explore Insurers", href: "/term-insurance/best-plans" }}
         secondaryCta={{ label: "Calculate Premium", href: "/term-insurance/premium-calculator" }}
         variant="gradient"
       />
@@ -424,7 +424,7 @@ export default function VsTraditionalPage() {
         <CTASection
           title="Make the Right Choice for Your Family"
           description="Get maximum protection at minimum cost with term insurance. Compare plans from top insurers and secure your family's future today."
-          primaryCta={{ label: "Compare Term Plans", href: "/term-insurance/best-plans" }}
+          primaryCta={{ label: "Explore Insurers", href: "/term-insurance/best-plans" }}
           secondaryCta={{ label: "Calculate Premium", href: "/term-insurance/premium-calculator" }}
         />
       </div>

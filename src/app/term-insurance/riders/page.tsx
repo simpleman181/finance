@@ -131,7 +131,7 @@ const faqs = [
 
 const relatedPages = [
   { title: "Complete Term Insurance Guide", description: "Everything you need to know about term insurance", href: "/term-insurance", icon: <Shield className="h-5 w-5" /> },
-  { title: "Best Plans", description: "Compare top term insurance plans", href: "/term-insurance/best-plans", icon: <TrendingUp className="h-5 w-5" /> },
+  { title: "Explore Insurers", description: "See term insurers' official plans", href: "/term-insurance/best-plans", icon: <TrendingUp className="h-5 w-5" /> },
   { title: "Premium Calculator", description: "Calculate your premium with riders", href: "/term-insurance/premium-calculator", icon: <IndianRupee className="h-5 w-5" /> },
   { title: "Common Mistakes", description: "Avoid these insurance mistakes", href: "/term-insurance/mistakes", icon: <AlertTriangle className="h-5 w-5" /> },
 ];
@@ -145,7 +145,7 @@ export default function RidersPage() {
         titleHighlight="Explained Simply"
         description="Enhance your term insurance coverage with riders. Learn about critical illness, accidental death, waiver of premium, and other add-ons that provide comprehensive protection."
         primaryCta={{ label: "Calculate with Riders", href: "/term-insurance/premium-calculator" }}
-        secondaryCta={{ label: "Compare Plans", href: "/term-insurance/best-plans" }}
+        secondaryCta={{ label: "Explore Insurers", href: "/term-insurance/best-plans" }}
         variant="gradient"
       />
 
@@ -331,7 +331,7 @@ export default function RidersPage() {
           title="Enhance Your Coverage Today"
           description="Add the right riders to your term insurance for comprehensive protection. Calculate your premium with various rider combinations."
           primaryCta={{ label: "Calculate Premium", href: "/term-insurance/premium-calculator" }}
-          secondaryCta={{ label: "Compare Plans", href: "/term-insurance/best-plans" }}
+          secondaryCta={{ label: "Explore Insurers", href: "/term-insurance/best-plans" }}
         />
       </div>
     </div>

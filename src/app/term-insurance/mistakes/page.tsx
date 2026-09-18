@@ -158,7 +158,7 @@ export default function MistakesPage() {
         titleHighlight="Mistakes to Avoid"
         description="Don't let these common mistakes put your family's financial future at risk. Learn from others' errors and ensure your term insurance actually protects your loved ones."
         primaryCta={{ label: "Calculate Correct Coverage", href: "/tools/term-coverage-calculator" }}
-        secondaryCta={{ label: "Compare Plans", href: "/term-insurance/best-plans" }}
+        secondaryCta={{ label: "Explore Insurers", href: "/term-insurance/best-plans" }}
         variant="gradient"
       />
 
@@ -293,7 +293,7 @@ export default function MistakesPage() {
           title="Don't Make These Mistakes"
           description="Get the right coverage with proper disclosure. Use our calculator to determine your ideal coverage and compare plans from top insurers."
           primaryCta={{ label: "Calculate Coverage", href: "/tools/term-coverage-calculator" }}
-          secondaryCta={{ label: "Compare Plans", href: "/term-insurance/best-plans" }}
+          secondaryCta={{ label: "Explore Insurers", href: "/term-insurance/best-plans" }}
         />
       </div>
     </div>

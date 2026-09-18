@@ -147,7 +147,7 @@ export default function ForSalariedPage() {
         titleHighlight="Salaried Employees"
         description="Your employer's group insurance is not enough. Learn why salaried professionals need personal term insurance and how much coverage you actually need beyond your company policy."
         primaryCta={{ label: "Calculate Coverage Gap", href: "/tools/term-coverage-calculator" }}
-        secondaryCta={{ label: "Compare Plans", href: "/term-insurance/best-plans" }}
+        secondaryCta={{ label: "Explore Insurers", href: "/term-insurance/best-plans" }}
         variant="gradient"
       />
 
@@ -345,7 +345,7 @@ export default function ForSalariedPage() {
           title="Secure Your Family's Future Today"
           description="Don't rely solely on your employer's coverage. Get a personal term insurance policy that stays with you through all career changes."
           primaryCta={{ label: "Calculate Your Coverage", href: "/tools/term-coverage-calculator" }}
-          secondaryCta={{ label: "Compare Plans", href: "/term-insurance/best-plans" }}
+          secondaryCta={{ label: "Explore Insurers", href: "/term-insurance/best-plans" }}
         />
       </div>
     </div>
