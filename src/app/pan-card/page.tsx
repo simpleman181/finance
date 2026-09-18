@@ -302,6 +302,47 @@ export default function PANCardPage() {
           </div>
         </section>
 
+        {/* Physical / Offline Application Forms */}
+        <section className="mb-16">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
+            Applying Offline with a Physical Form
+          </h2>
+          <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-8">
+            Prefer to fill out a paper form? Download the official PAN application form below,
+            print it, fill it out, and submit it with your documents at any UTIITSL or Protean
+            (formerly NSDL) PAN centre.
+          </p>
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 max-w-2xl mx-auto mb-6">
+            <p className="text-sm text-amber-800">
+              <strong>Note:</strong> The old Form 49A / 49AA were retired on 1 April 2026 under the
+              Income-tax Rules, 2026. Applications submitted on the old forms are no longer
+              accepted — make sure you&apos;re using one of the current forms below.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
+            <Button asChild variant="outline" className="h-auto py-4 justify-start">
+              <a href="https://www.incometaxindia.gov.in/documents/d/guest/form-93" target="_blank" rel="noopener noreferrer">
+                <FileText className="mr-2 h-4 w-4" />
+                Form 93 (Indian Citizens)
+              </a>
+            </Button>
+            <Button asChild variant="outline" className="h-auto py-4 justify-start">
+              <a href="https://www.incometaxindia.gov.in/documents/d/guest/form-95" target="_blank" rel="noopener noreferrer">
+                <FileText className="mr-2 h-4 w-4" />
+                Form 95 (Foreign Citizens)
+              </a>
+            </Button>
+          </div>
+          <p className="text-xs text-muted-foreground text-center mt-4">
+            Entities (companies, firms, trusts, etc.) should use Form 94 (Indian) or Form 96
+            (foreign) instead — available on the{" "}
+            <a href="https://www.incometaxindia.gov.in/pan" target="_blank" rel="noopener noreferrer" className="underline">
+              Income Tax Department&apos;s PAN page
+            </a>
+            .
+          </p>
+        </section>
+
         {/* Official Links */}
         <section className="mb-16">
           <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">

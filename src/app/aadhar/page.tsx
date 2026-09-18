@@ -312,6 +312,26 @@ export default function AadharPage() {
           </div>
         </section>
 
+        {/* Physical / Offline Form */}
+        <section className="mb-16">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
+            Applying Offline with a Physical Form
+          </h2>
+          <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-8">
+            New enrolment and most corrections require visiting an Aadhaar Enrolment Centre in
+            person (for biometrics), but you can download and pre-fill the form beforehand to
+            save time there.
+          </p>
+          <div className="flex justify-center">
+            <Button asChild variant="outline" className="h-auto py-4 justify-start">
+              <a href="https://uidai.gov.in/images/Form_1_Eng.pdf" target="_blank" rel="noopener noreferrer">
+                <FileText className="mr-2 h-4 w-4" />
+                Aadhaar Enrolment &amp; Update Form (Age 18+)
+              </a>
+            </Button>
+          </div>
+        </section>
+
         {/* Official Links */}
         <section className="mb-16">
           <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
