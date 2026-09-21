@@ -144,7 +144,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <Badge className="bg-white/20 text-white border-0">
-                India&apos;s #1 Finance, Tax & Insurance Education Platform
+                Free Finance, Tax &amp; Insurance Education
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 <span className="text-yellow-300">Free Financial Education for Every Indian</span>{" "}
@@ -364,13 +364,13 @@ export default function HomePage() {
               Why Choose Us
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Trusted by Thousands of{" "}
-              <span className="gradient-text">Indian Investors</span>
+              Why{" "}
+              <span className="gradient-text">SabPataKaro</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              SabPataKaro is your reliable partner for all financial decisions.
-              Our expert-researched content helps you navigate the complex world
-              of insurance, taxes, and investments with confidence.
+              We break down insurance, taxes, and investing into plain language,
+              without trying to sell you anything. Where it matters, we link
+              directly to official sources so you can verify things yourself.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {features.map((feature, index) => (

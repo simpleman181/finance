@@ -3,16 +3,10 @@ import { HeroSection } from "@/components/shared/hero-section";
 import { FAQAccordion } from "@/components/shared/faq-accordion";
 import { RelatedPages } from "@/components/shared/related-pages";
 import { CTASection } from "@/components/shared/cta-section";
+import { InsurerLinks } from "@/components/shared/insurer-links";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
+import { termInsurers } from "@/lib/insurer-links";
 import {
   Award,
   TrendingUp,
@@ -25,23 +19,10 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Claim Settlement Ratio of Insurance Companies in India 2024",
-  description: "Compare claim settlement ratios of all life insurance companies in India. Understand what CSR means, why it matters, and how to choose an insurer with high claim reliability.",
-  keywords: ["claim settlement ratio", "CSR insurance", "term insurance claim ratio", "IRDAI claim ratio", "best insurance company claim settlement"],
+  title: "Claim Settlement Ratio of Insurance Companies in India",
+  description: "Understand what claim settlement ratio (CSR) means, why it matters, and how to evaluate it when choosing a term insurance company. Educational guide only — no ranking.",
+  keywords: ["claim settlement ratio", "CSR insurance", "term insurance claim ratio", "IRDAI claim ratio"],
 };
-
-const claimRatios = [
-  { insurer: "Max Life", csr: 99.34, claims: 31245, trend: "up", color: "#059669" },
-  { insurer: "HDFC Life", csr: 99.35, claims: 28987, trend: "stable", color: "#1e40af" },
-  { insurer: "Tata AIA", csr: 99.13, claims: 15678, trend: "up", color: "#7c3aed" },
-  { insurer: "ICICI Prudential", csr: 98.58, claims: 24532, trend: "stable", color: "#dc2626" },
-  { insurer: "Bajaj Allianz", csr: 99.02, claims: 19876, trend: "up", color: "#ea580c" },
-  { insurer: "Kotak Life", csr: 98.82, claims: 13456, trend: "stable", color: "#0891b2" },
-  { insurer: "SBI Life", csr: 97.88, claims: 32145, trend: "up", color: "#1e40af" },
-  { insurer: "Aditya Birla Sun Life", csr: 98.05, claims: 11234, trend: "stable", color: "#dc2626" },
-  { insurer: "PNB MetLife", csr: 98.17, claims: 8765, trend: "up", color: "#1e40af" },
-  { insurer: "Aviva Life", csr: 98.25, claims: 5432, trend: "stable", color: "#7c3aed" },
-];
 
 const csrFactors = [
   {
@@ -81,7 +62,7 @@ const csrMyths = [
   },
   {
     myth: "Public sector insurers have lower CSR",
-    reality: "LIC has consistently maintained high CSR (98.52% in FY 2022-23). Both public and private insurers can have excellent claim settlement records. Judge by data, not ownership.",
+    reality: "LIC has historically maintained a high CSR. Both public and private insurers can have excellent claim settlement records — check the current published figures rather than assuming based on ownership.",
   },
 ];
 
@@ -126,7 +107,7 @@ export default function ClaimSettlementRatioPage() {
         badge="CSR Guide"
         title="Claim Settlement Ratio"
         titleHighlight="Explained & Compared"
-        description="Understand what claim settlement ratio means, why it's crucial for choosing term insurance, and compare CSR of all major insurance companies in India."
+        description="Understand what claim settlement ratio means, why it's worth checking before choosing term insurance, and where to find the current, official figures."
         primaryCta={{ label: "Explore Insurers", href: "/term-insurance/best-plans" }}
         secondaryCta={{ label: "Calculate Premium", href: "/term-insurance/premium-calculator" }}
         variant="gradient"
@@ -181,56 +162,12 @@ export default function ClaimSettlementRatioPage() {
           </div>
         </section>
 
-        {/* CSR Comparison Table */}
-        <section className="mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
-            Claim Settlement Ratio Comparison (FY 2022-23)
-          </h2>
-          
-          <Card>
-            <CardContent className="pt-6">
-              <div className="overflow-x-auto">
-                <Table>
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead>Insurance Company</TableHead>
-                      <TableHead className="text-center">CSR (%)</TableHead>
-                      <TableHead className="text-center">Claims Handled</TableHead>
-                      <TableHead className="text-center">Rating</TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    {claimRatios.map((company, index) => (
-                      <TableRow key={index}>
-                        <TableCell className="font-medium">{company.insurer}</TableCell>
-                        <TableCell className="text-center">
-                          <Badge className={company.csr >= 99 ? "bg-green-100 text-green-700" : company.csr >= 98 ? "bg-blue-100 text-blue-700" : "bg-amber-100 text-amber-700"}>
-                            {company.csr}%
-                          </Badge>
-                        </TableCell>
-                        <TableCell className="text-center">{company.claims.toLocaleString()}</TableCell>
-                        <TableCell className="text-center">
-                          <div className="flex justify-center">
-                            {company.csr >= 99 ? (
-                              <Badge className="bg-green-100 text-green-700">Excellent</Badge>
-                            ) : company.csr >= 98 ? (
-                              <Badge className="bg-blue-100 text-blue-700">Very Good</Badge>
-                            ) : (
-                              <Badge className="bg-amber-100 text-amber-700">Good</Badge>
-                            )}
-                          </div>
-                        </TableCell>
-                      </TableRow>
-                    ))}
-                  </TableBody>
-                </Table>
-              </div>
-              <p className="text-sm text-muted-foreground mt-4 text-center">
-                Source: IRDAI Annual Report FY 2022-23 | CSR may vary slightly based on claim type
-              </p>
-            </CardContent>
-          </Card>
-        </section>
+        {/* Explore insurers directly */}
+        <InsurerLinks
+          title="Explore Term Plans Directly From Insurers"
+          description="See each insurer's current claim settlement ratio on their own site, or check the official IRDAI Annual Report for the authoritative, dated figures."
+          insurers={termInsurers}
+        />
 
         {/* CSR Myths */}
         <section className="mb-12">
@@ -299,7 +236,7 @@ export default function ClaimSettlementRatioPage() {
         {/* CTA */}
         <CTASection
           title="Choose a Reliable Insurer"
-          description="Compare term insurance plans from top insurers with high claim settlement ratios. Make sure your family's claim is honored when they need it most."
+          description="Check each insurer's current claim settlement ratio directly on their site before you buy."
           primaryCta={{ label: "Explore Insurers", href: "/term-insurance/best-plans" }}
           secondaryCta={{ label: "Calculate Premium", href: "/term-insurance/premium-calculator" }}
         />
