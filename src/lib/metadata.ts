@@ -15,7 +15,7 @@ export const siteConfig = {
   url: "https://sabpatakaro.com",
   ogImage: "/og-image.png",
   twitterHandle: "@sabpatakaro",
-  email: "mailtosabpatakaro@gmail.com",
+  email: "logixmagix@proton.me",
 };
 
 // Metadata for all pages

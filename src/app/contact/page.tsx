@@ -45,10 +45,10 @@ export default function ContactPage() {
                   For general inquiries, suggestions, or feedback:
                 </p>
                 <a 
-                  href="mailto:mailtosabpatakaro@gmail.com" 
+                  href="mailto:logixmagix@proton.me" 
                   className="text-primary font-medium hover:underline"
                 >
-                  mailtosabpatakaro@gmail.com
+                  logixmagix@proton.me
                 </a>
               </div>
 

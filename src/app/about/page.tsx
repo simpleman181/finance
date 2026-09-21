@@ -72,8 +72,8 @@ export default function AboutPage() {
                 Contact page
               </Link>{" "}
               or email us directly at{" "}
-              <a href="mailto:mailtosabpatakaro@gmail.com" className="text-primary font-medium hover:underline">
-                mailtosabpatakaro@gmail.com
+              <a href="mailto:logixmagix@proton.me" className="text-primary font-medium hover:underline">
+                logixmagix@proton.me
               </a>
               .
             </p>

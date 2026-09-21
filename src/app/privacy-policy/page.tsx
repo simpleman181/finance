@@ -87,8 +87,8 @@ export default function PrivacyPolicyPage() {
               You can browse SabPataKaro without submitting any personal information at all —
               the contact form is the only place we ask for it, and it's entirely optional. To
               request deletion of a message you sent us, email{" "}
-              <a href="mailto:mailtosabpatakaro@gmail.com" className="text-primary font-medium hover:underline">
-                mailtosabpatakaro@gmail.com
+              <a href="mailto:logixmagix@proton.me" className="text-primary font-medium hover:underline">
+                logixmagix@proton.me
               </a>
               .
             </p>

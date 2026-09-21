@@ -105,8 +105,8 @@ export function Footer() {
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-sm">
                 <Mail className="h-4 w-4 text-[#1e40af]" />
-                <a href="mailto:mailtosabpatakaro@gmail.com" className="hover:text-white transition-colors">
-                  mailtosabpatakaro@gmail.com
+                <a href="mailto:logixmagix@proton.me" className="hover:text-white transition-colors">
+                  logixmagix@proton.me
                 </a>
               </div>
             </div>

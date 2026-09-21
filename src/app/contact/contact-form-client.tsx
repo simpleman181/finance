@@ -31,7 +31,7 @@ export function ContactForm() {
     await new Promise((resolve) => setTimeout(resolve, 1500));
 
     // In production, you would send this to your backend
-    // which would email to mailtosabpatakaro@gmail.com
+    // which would email to logixmagix@proton.me
     console.log("Form submitted:", formData);
 
     setIsSubmitting(false);
