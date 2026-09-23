@@ -25,49 +25,51 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Old vs New Tax Regime Comparison 2024-25 | Which is Better?",
-  description: "Compare old and new tax regimes in India. Calculate which regime is better for you based on income and deductions. Make an informed choice for tax filing.",
+  title: "Old vs New Tax Regime Comparison | Which is Better?",
+  description: "Compare old and new tax regimes in India with current slab rates. Calculate which regime is better for you based on income and deductions.",
   keywords: ["old vs new tax regime", "tax regime comparison", "which tax regime is better", "income tax regime India"],
 };
 
 const comparisonData = [
   { slab: "Up to ₹2,50,000", old: "Nil", new: "Nil" },
-  { slab: "₹2,50,001 - ₹3,00,000", old: "5%", new: "Nil" },
-  { slab: "₹3,00,001 - ₹5,00,000", old: "5%", new: "5%" },
-  { slab: "₹5,00,001 - ₹7,00,000", old: "20%", new: "5%" },
-  { slab: "₹7,00,001 - ₹10,00,000", old: "20%", new: "10%" },
-  { slab: "₹10,00,001 - ₹12,00,000", old: "30%", new: "15%" },
-  { slab: "₹12,00,001 - ₹15,00,000", old: "30%", new: "20%" },
-  { slab: "Above ₹15,00,000", old: "30%", new: "30%" },
+  { slab: "₹2,50,001 - ₹4,00,000", old: "5%", new: "Nil" },
+  { slab: "₹4,00,001 - ₹5,00,000", old: "5%", new: "5%" },
+  { slab: "₹5,00,001 - ₹8,00,000", old: "20%", new: "5%" },
+  { slab: "₹8,00,001 - ₹10,00,000", old: "20%", new: "10%" },
+  { slab: "₹10,00,001 - ₹12,00,000", old: "30%", new: "10%" },
+  { slab: "₹12,00,001 - ₹16,00,000", old: "30%", new: "15%" },
+  { slab: "₹16,00,001 - ₹20,00,000", old: "30%", new: "20%" },
+  { slab: "₹20,00,001 - ₹24,00,000", old: "30%", new: "25%" },
+  { slab: "Above ₹24,00,000", old: "30%", new: "30%" },
 ];
 
 const deductionsAvailable = [
-  { section: "80C", old: "✅ Up to ₹1.5L", new: "❌ Not available" },
-  { section: "80D (Health Insurance)", old: "✅ Up to ₹75K", new: "❌ Not available" },
-  { section: "80CCD(1B) NPS", old: "✅ Up to ₹50K", new: "❌ Not available" },
+  { section: "80C (now Section 123)", old: "✅ Up to ₹1.5L", new: "❌ Not available" },
+  { section: "80D (now Section 126)", old: "✅ Up to ₹75K", new: "❌ Not available" },
+  { section: "80CCD(1B) NPS (now Section 124)", old: "✅ Up to ₹50K", new: "❌ Not available" },
   { section: "HRA Exemption", old: "✅ Available", new: "❌ Not available" },
   { section: "LTA", old: "✅ Available", new: "❌ Not available" },
   { section: "Home Loan Interest", old: "✅ Up to ₹2L", new: "❌ Not available" },
-  { section: "Standard Deduction", old: "✅ ₹50,000", new: "✅ ₹50,000" },
+  { section: "Standard Deduction", old: "✅ ₹50,000", new: "✅ ₹75,000" },
   { section: "Professional Tax", old: "✅ Available", new: "❌ Not available" },
 ];
 
 const faqs = [
   {
     question: "Which tax regime should I choose?",
-    answer: "It depends on your deductions. If your total deductions exceed ₹2-2.5 lakhs (80C, 80D, HRA, LTA, home loan), the old regime is typically better. If you have minimal deductions, the new regime with lower tax rates is more beneficial. Use our tax calculator to compare both for your specific situation.",
+    answer: "It depends on your deductions relative to your income. As a rough guide, if your total deductions (80C/123, 80D/126, HRA, home loan interest, etc.) exceed roughly ₹3.75-4.25 lakh beyond the standard deduction, the old regime is often better. With smaller deductions, the new regime's lower rates and higher rebate threshold (tax-free up to ~₹12.75L) usually win. Use our tax calculator to compare both for your specific situation.",
   },
   {
     question: "Can I switch between regimes every year?",
     answer: "Yes, for salaried individuals with business income, you can choose between regimes each year at the time of filing ITR. However, if you have business income, once you opt out of the new regime, you can only opt back in once. The choice is made via Form 10-IEA.",
   },
   {
-    question: "Is rebate under 87A available in both regimes?",
-    answer: "Yes, rebate under Section 87A is available in both regimes. In the old regime, rebate is available if taxable income is up to ₹5 lakh. In the new regime, rebate is available if taxable income is up to ₹7 lakh. This effectively makes income up to ₹7 lakh tax-free under the new regime.",
+    question: "Is rebate under Section 87A (now Section 157) available in both regimes?",
+    answer: "Yes. In the old regime, the rebate is available if taxable income is up to ₹5 lakh (rebate up to ₹12,500). In the new regime, it's available if taxable income is up to ₹12 lakh (rebate up to ₹60,000) - combined with the ₹75,000 standard deduction, this makes salaried income up to about ₹12.75 lakh effectively tax-free under the new regime.",
   },
   {
     question: "What deductions are not available in the new regime?",
-    answer: "Major deductions not available: 80C (PPF, ELSS, insurance), 80D (health insurance), HRA exemption, LTA, home loan interest under 24(b), professional tax, 80E (education loan interest), 80EE/80EEA (additional home loan interest), and most other chapter VI-A deductions.",
+    answer: "Major deductions not available: Section 80C/123 (PPF, ELSS, insurance), Section 80D/126 (health insurance), HRA exemption, LTA, home loan interest, professional tax, education loan interest, additional home loan interest, and most other Chapter VI-A deductions.",
   },
   {
     question: "Do I need to submit Form 10-IEA?",
@@ -89,7 +91,7 @@ export default function OldVsNewRegimePage() {
         badge="Tax Regime Comparison"
         title="Old vs New Tax Regime"
         titleHighlight="Which is Better?"
-        description="Compare old and new tax regimes for FY 2024-25. Understand the differences in tax slabs, deductions, and find out which regime saves you more tax."
+        description="Compare old and new tax regimes with current slab rates. Understand the differences in tax slabs, deductions, and find out which regime saves you more tax."
         primaryCta={{ label: "Calculate Your Tax", href: "/tax/income-tax-calculator" }}
         secondaryCta={{ label: "View Tax Slabs", href: "/tax/income-tax-slabs" }}
         variant="gradient"
@@ -99,7 +101,7 @@ export default function OldVsNewRegimePage() {
         {/* Tax Slabs Comparison */}
         <section className="mb-12">
           <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
-            Tax Slabs Comparison (FY 2024-25)
+            Tax Slabs Comparison
           </h2>
           
           <Card>
@@ -126,7 +128,7 @@ export default function OldVsNewRegimePage() {
               </div>
               <div className="mt-4 flex flex-wrap gap-2 justify-center">
                 <Badge variant="outline">Cess: 4% on tax (both)</Badge>
-                <Badge variant="outline">Rebate 87A: Old up to ₹5L, New up to ₹7L</Badge>
+                <Badge variant="outline">Rebate 87A: Old up to ₹5L, New up to ₹12L</Badge>
               </div>
             </CardContent>
           </Card>
@@ -150,11 +152,11 @@ export default function OldVsNewRegimePage() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
-                    <span>80C: Save ₹1.5L on PPF, ELSS, Insurance</span>
+                    <span>80C / Section 123: Save ₹1.5L on PPF, ELSS, Insurance</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
-                    <span>80D: Health insurance deduction</span>
+                    <span>80D / Section 126: Health insurance deduction</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
@@ -187,11 +189,11 @@ export default function OldVsNewRegimePage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
-                    <span>Zero tax up to ₹7L (with rebate)</span>
+                    <span>Zero tax up to ~₹12.75L (with rebate + standard deduction)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
-                    <span>Standard deduction of ₹50,000</span>
+                    <span>Standard deduction of ₹75,000</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
@@ -223,28 +225,32 @@ export default function OldVsNewRegimePage() {
                   <ul className="space-y-2 text-sm">
                     <li className="flex justify-between"><span>Gross Income</span><span>₹12,00,000</span></li>
                     <li className="flex justify-between"><span>Standard Deduction</span><span>-₹50,000</span></li>
-                    <li className="flex justify-between"><span>80C (PPF, Insurance)</span><span>-₹1,50,000</span></li>
-                    <li className="flex justify-between"><span>80D (Health Insurance)</span><span>-₹25,000</span></li>
+                    <li className="flex justify-between"><span>80C / 123 (PPF, Insurance)</span><span>-₹1,50,000</span></li>
+                    <li className="flex justify-between"><span>80D / 126 (Health Insurance)</span><span>-₹25,000</span></li>
                     <li className="flex justify-between"><span>HRA</span><span>-₹1,00,000</span></li>
                     <li className="flex justify-between font-bold border-t pt-2"><span>Taxable Income</span><span>₹8,75,000</span></li>
-                    <li className="flex justify-between font-bold text-blue-700"><span>Tax Payable</span><span>₹1,04,000</span></li>
+                    <li className="flex justify-between font-bold text-blue-700"><span>Tax Payable</span><span>₹91,000</span></li>
                   </ul>
                 </div>
                 <div className="bg-green-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-green-800 mb-3">New Regime</h4>
                   <ul className="space-y-2 text-sm">
                     <li className="flex justify-between"><span>Gross Income</span><span>₹12,00,000</span></li>
-                    <li className="flex justify-between"><span>Standard Deduction</span><span>-₹50,000</span></li>
+                    <li className="flex justify-between"><span>Standard Deduction</span><span>-₹75,000</span></li>
                     <li className="flex justify-between"><span>No other deductions</span><span>-₹0</span></li>
-                    <li className="flex justify-between font-bold border-t pt-2"><span>Taxable Income</span><span>₹11,50,000</span></li>
-                    <li className="flex justify-between font-bold text-green-700"><span>Tax Payable</span><span>₹85,800</span></li>
+                    <li className="flex justify-between font-bold border-t pt-2"><span>Taxable Income</span><span>₹11,25,000</span></li>
+                    <li className="flex justify-between font-bold text-green-700"><span>Tax Payable</span><span>₹0 (rebate)</span></li>
                   </ul>
                 </div>
               </div>
               <div className="mt-4 p-3 bg-amber-50 rounded-lg">
                 <p className="text-sm text-center">
-                  <strong>In this case:</strong> New regime saves ₹18,200. But with home loan interest (₹2L), 
-                  old regime would save ₹41,800. Your choice depends on your deductions!
+                  <strong>In this case:</strong> the new regime saves the full ₹91,000, since
+                  taxable income of ₹11.25L falls under the ₹12L Section 87A rebate threshold.
+                  This is why the new regime now wins for most taxpayers up to roughly ₹15-16L
+                  income - the old regime only pulls ahead once your genuine deductions
+                  (80C/123, 80D/126, HRA, home loan interest) are large relative to your income.
+                  Run your own numbers with the calculator below rather than relying on a single example.
                 </p>
               </div>
             </CardContent>

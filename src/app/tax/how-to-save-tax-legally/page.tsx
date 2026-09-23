@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Receipt, Calculator, TrendingUp, IndianRupee, ArrowRight, CheckCircle, AlertTriangle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "How to Save Tax Legally in India | Smart Tax Strategies 2024-25",
-  description: "Learn legal ways to save tax in India. From 80C investments to HRA exemptions, discover all legitimate tax-saving strategies for individuals.",
+  title: "How to Save Tax Legally in India | Smart Tax Strategies",
+  description: "Learn legal ways to save tax in India. From Section 80C/123 investments to HRA exemptions, discover all legitimate tax-saving strategies for individuals.",
   keywords: ["how to save tax legally", "legal tax saving", "tax saving tips", "reduce tax India"],
 };
 
@@ -31,9 +31,9 @@ export default function HowToSaveTaxLegallyPage() {
       <div className="container px-4 md:px-6 py-12">
         <div className="max-w-4xl mx-auto space-y-6">
           {[
-            { section: "Section 80C", limit: "Up to ₹1.5L", options: "PPF, ELSS, EPF, Life Insurance, NSC, Tax-Saving FD" },
-            { section: "Section 80CCD(1B)", limit: "Up to ₹50K", options: "NPS additional deduction" },
-            { section: "Section 80D", limit: "Up to ₹75K", options: "Health insurance for self + parents" },
+            { section: "Section 80C (now 123)", limit: "Up to ₹1.5L", options: "PPF, ELSS, EPF, Life Insurance, NSC, Tax-Saving FD" },
+            { section: "Section 80CCD(1B) (now 124)", limit: "Up to ₹50K", options: "NPS additional deduction" },
+            { section: "Section 80D (now 126)", limit: "Up to ₹75K", options: "Health insurance for self + parents" },
             { section: "HRA Exemption", limit: "Varies", options: "Rent paid minus 10% of basic (least of 3)" },
             { section: "Section 24(b)", limit: "Up to ₹2L", options: "Home loan interest deduction" },
             { section: "Section 80E", limit: "No limit", options: "Education loan interest (8 years)" },

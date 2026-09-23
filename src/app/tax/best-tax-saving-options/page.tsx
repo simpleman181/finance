@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Receipt, Calculator, TrendingUp, IndianRupee, ArrowRight, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Best Tax Saving Options for Salaried People in India 2024-25",
+  title: "Best Tax Saving Options for Salaried People in India",
   description: "Discover the best tax saving options for salaried individuals. Compare PPF, ELSS, NPS, and other tax-saving investments to maximize your savings.",
   keywords: ["best tax saving options", "tax saving for salaried", "tax saving investments", "80C investments"],
 };

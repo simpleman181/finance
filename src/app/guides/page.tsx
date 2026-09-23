@@ -63,7 +63,7 @@ const guideCategories = [
     href: "/tax",
     guides: [
       { title: "Income Tax Basics", href: "/tax", description: "Complete introduction to income tax" },
-      { title: "Tax Slabs 2024-25", href: "/tax/income-tax-slabs", description: "Current tax rates and slabs" },
+      { title: "Current Tax Slabs", href: "/tax/income-tax-slabs", description: "Current tax rates and slabs" },
       { title: "Section 80C Guide", href: "/tax/section-80c", description: "Save up to ₹1.5 lakh in taxes" },
       { title: "Old vs New Tax Regime", href: "/tax/old-vs-new-regime", description: "Compare and choose the best regime" },
       { title: "Income Tax Calculator", href: "/tax/income-tax-calculator", description: "Calculate your tax liability" },

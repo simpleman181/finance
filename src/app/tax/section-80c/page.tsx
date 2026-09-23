@@ -8,9 +8,9 @@ import { Badge } from "@/components/ui/badge";
 import { Receipt, Calculator, TrendingUp, IndianRupee, PiggyBank, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Section 80C Deductions List 2024-25 | Tax Saving Investments",
-  description: "Complete list of Section 80C deductions. Know all tax-saving investments under 80C - PPF, ELSS, NSC, Life Insurance, EPF, and more. Save up to ₹1.5 lakh in taxes.",
-  keywords: ["section 80c", "80c deductions", "tax saving investments", "80c limit", "PPF tax benefit", "ELSS 80c"],
+  title: "Section 80C Deductions List (Now Section 123) | Tax Saving Investments",
+  description: "Complete list of Section 80C deductions - renumbered as Section 123 under the Income-tax Act, 2025. PPF, ELSS, NSC, Life Insurance, EPF, and more. Save up to ₹1.5 lakh in taxes.",
+  keywords: ["section 80c", "section 123 income tax act 2025", "80c deductions", "tax saving investments", "80c limit", "PPF tax benefit", "ELSS 80c"],
 };
 
 const investments80C = [
@@ -66,14 +66,21 @@ export default function Section80CPage() {
       <HeroSection
         badge="Tax Saving Guide"
         title="Section 80C Deductions"
-        titleHighlight="Complete List 2024-25"
-        description="Save up to ₹46,800 in taxes with Section 80C deductions. Explore all eligible investments and expenses under 80C to maximize your tax savings."
+        titleHighlight="(Now Section 123)"
+        description="Save up to ₹46,800 in taxes (for taxpayers in the 30% bracket) under the old regime's Section 80C-equivalent deductions. Explore all eligible investments and expenses to maximize your tax savings."
         primaryCta={{ label: "Calculate Tax Savings", href: "/tax/income-tax-calculator" }}
         secondaryCta={{ label: "View Other Deductions", href: "/tax/section-80d" }}
         variant="gradient"
       />
 
       <div className="container px-4 md:px-6 py-12">
+        {/* Renumbering Note */}
+        <div className="max-w-4xl mx-auto mb-8 bg-amber-50 border border-amber-200 rounded-xl p-4">
+          <p className="text-sm text-amber-800">
+            <strong>Note:</strong> Under the Income-tax Act, 2025 (effective 1 April 2026, replacing the 1961 Act), &quot;Section 80C&quot; is renumbered as <strong>Section 123</strong>. The ₹1.5 lakh limit and eligible investments below are unchanged - only the section number is different, and it&apos;s still available only under the old tax regime. We use &quot;80C&quot; throughout this page since that&apos;s the term most people still search for and recognize.
+          </p>
+        </div>
+
         {/* Key Points */}
         <section className="max-w-4xl mx-auto mb-12">
           <Card className="bg-gradient-to-r from-blue-50 to-green-50">

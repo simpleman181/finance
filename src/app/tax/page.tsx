@@ -20,8 +20,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Complete Guide to Income Tax in India 2024 | FinanceTaxPro",
-  description: "Comprehensive guide to income tax in India. Learn about tax slabs, deductions, exemptions, and smart tax-saving strategies under the Income Tax Act.",
+  title: "Complete Guide to Income Tax in India | SabPataKaro",
+  description: "Comprehensive guide to income tax in India. Learn about current tax slabs, deductions, exemptions, and smart tax-saving strategies under the Income-tax Act.",
   keywords: ["income tax India", "tax guide", "tax slabs", "tax deductions", "tax saving", "income tax calculator"],
 };
 
@@ -42,22 +42,25 @@ const quickLinks = [
 ];
 
 const taxSlabs = [
-  { slab: "Up to ₹3,00,000", oldRegime: "Nil", newRegime: "Nil" },
-  { slab: "₹3,00,001 - ₹5,00,000", oldRegime: "5%", newRegime: "5%" },
-  { slab: "₹5,00,001 - ₹7,00,000", oldRegime: "20%", newRegime: "10%" },
-  { slab: "₹7,00,001 - ₹10,00,000", oldRegime: "20%", newRegime: "15%" },
-  { slab: "₹10,00,001 - ₹12,00,000", oldRegime: "30%", newRegime: "20%" },
-  { slab: "₹12,00,001 - ₹15,00,000", oldRegime: "30%", newRegime: "25%" },
-  { slab: "Above ₹15,00,000", oldRegime: "30%", newRegime: "30%" },
+  { slab: "Up to ₹2,50,000", oldRegime: "Nil", newRegime: "Nil" },
+  { slab: "₹2,50,001 - ₹4,00,000", oldRegime: "5%", newRegime: "Nil" },
+  { slab: "₹4,00,001 - ₹5,00,000", oldRegime: "5%", newRegime: "5%" },
+  { slab: "₹5,00,001 - ₹8,00,000", oldRegime: "20%", newRegime: "5%" },
+  { slab: "₹8,00,001 - ₹10,00,000", oldRegime: "20%", newRegime: "10%" },
+  { slab: "₹10,00,001 - ₹12,00,000", oldRegime: "30%", newRegime: "10%" },
+  { slab: "₹12,00,001 - ₹16,00,000", oldRegime: "30%", newRegime: "15%" },
+  { slab: "₹16,00,001 - ₹20,00,000", oldRegime: "30%", newRegime: "20%" },
+  { slab: "₹20,00,001 - ₹24,00,000", oldRegime: "30%", newRegime: "25%" },
+  { slab: "Above ₹24,00,000", oldRegime: "30%", newRegime: "30%" },
 ];
 
 const deductions = [
-  { section: "80C", limit: "₹1,50,000", items: "PPF, ELSS, NSC, Life Insurance, EPF, Tax-saving FD, Children's tuition fees" },
-  { section: "80D", limit: "₹25,000-75,000", items: "Health insurance premium for self, family, and parents" },
-  { section: "80CCD(1B)", limit: "₹50,000", items: "NPS (National Pension System) contribution" },
+  { section: "80C (now Section 123)", limit: "₹1,50,000", items: "PPF, ELSS, NSC, Life Insurance, EPF, Tax-saving FD, Children's tuition fees" },
+  { section: "80D (now Section 126)", limit: "₹25,000-75,000", items: "Health insurance premium for self, family, and parents" },
+  { section: "80CCD(1B) (now Section 124)", limit: "₹50,000", items: "NPS (National Pension System) contribution" },
   { section: "80E", limit: "No limit", items: "Interest on education loan (for 8 years)" },
-  { section: "80EEA", limit: "₹1,50,000", items: "Interest on home loan for affordable housing" },
-  { section: "80TTA", limit: "₹10,000", items: "Interest on savings account" },
+  { section: "80EEA (now Section 131)", limit: "₹1,50,000", items: "Interest on home loan for affordable housing" },
+  { section: "80TTA (now Section 153)", limit: "₹10,000", items: "Interest on savings account" },
 ];
 
 const faqs = [
@@ -124,7 +127,7 @@ export default function TaxGuidePage() {
         {/* Tax Slabs */}
         <section className="mb-12" id="tax-slabs">
           <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
-            Income Tax Slabs (FY 2024-25)
+            Income Tax Slabs
           </h2>
           
           <Card>
@@ -150,7 +153,7 @@ export default function TaxGuidePage() {
                 </table>
               </div>
               <div className="mt-4 flex gap-4">
-                <Badge variant="outline" className="bg-blue-50">Standard Deduction: ₹50,000 (both)</Badge>
+                <Badge variant="outline" className="bg-blue-50">Standard Deduction: ₹50,000 (old) / ₹75,000 (new)</Badge>
                 <Badge variant="outline" className="bg-amber-50">Cess: 4% on tax (both)</Badge>
               </div>
             </CardContent>

@@ -8,9 +8,9 @@ import { Badge } from "@/components/ui/badge";
 import { Receipt, Calculator, Heart, IndianRupee, CheckCircle, Users } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Section 80D Health Insurance Tax Benefits | Deduction Limit 2024-25",
-  description: "Complete guide to Section 80D tax deductions on health insurance premiums. Learn about limits for self, family, and parents. Save up to ₹75,000 in taxes.",
-  keywords: ["section 80d", "health insurance tax benefit", "80d deduction limit", "mediclaim tax deduction", "health insurance 80d"],
+  title: "Section 80D Health Insurance Tax Benefits (Now Section 126) | Deduction Limits",
+  description: "Complete guide to Section 80D tax deductions on health insurance premiums - renumbered as Section 126 under the Income-tax Act, 2025. Limits for self, family, and parents. Save up to ₹75,000 in taxes.",
+  keywords: ["section 80d", "section 126 income tax act 2025", "health insurance tax benefit", "80d deduction limit", "mediclaim tax deduction", "health insurance 80d"],
 };
 
 const deductionLimits = [
@@ -61,10 +61,17 @@ export default function Section80DPage() {
       />
 
       <div className="container px-4 md:px-6 py-12">
+        {/* Renumbering Note */}
+        <div className="max-w-3xl mx-auto mb-8 bg-amber-50 border border-amber-200 rounded-xl p-4">
+          <p className="text-sm text-amber-800">
+            <strong>Note:</strong> Under the Income-tax Act, 2025 (effective 1 April 2026), &quot;Section 80D&quot; is renumbered as <strong>Section 126</strong>. The limits below are unchanged - only the section number is different.
+          </p>
+        </div>
+
         {/* Deduction Limits */}
         <section className="mb-12">
           <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
-            Section 80D Deduction Limits (FY 2024-25)
+            Section 80D Deduction Limits
           </h2>
           
           <Card className="max-w-3xl mx-auto">
