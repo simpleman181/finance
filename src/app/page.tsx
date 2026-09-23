@@ -11,80 +11,54 @@ import {
   CheckCircle,
   Award,
   Clock,
-  ChevronRight,
   BookOpen,
   Target,
   GraduationCap,
   AlertTriangle,
+  Heart,
+  PiggyBank,
 } from "lucide-react";
 
-const categories = [
+const goals = [
   {
-    title: "Insurance Education",
-    description: "Understand how term insurance and health insurance work in India. Learn about coverage, claims, and policy selection.",
+    label: "Save Income Tax",
+    description: "Understand deductions, exemptions, and the old vs new regime",
+    icon: Receipt,
+    color: "#059669",
+    href: "/tax",
+    cta: "Explore Tax Guide",
+  },
+  {
+    label: "Buy Health Insurance",
+    description: "See official plans directly from India's major insurers",
+    icon: Heart,
+    color: "#dc2626",
+    href: "/health-insurance/best-plans",
+    cta: "Explore Insurers",
+  },
+  {
+    label: "Understand Term Insurance",
+    description: "Learn how coverage, claims, and premiums actually work",
     icon: Shield,
     color: "#1e40af",
     href: "/term-insurance",
-    links: [
-      { label: "Term Insurance Guide", href: "/term-insurance" },
-      { label: "Health Insurance Guide", href: "/health-insurance" },
-      { label: "Understanding Claim Ratios", href: "/term-insurance/claim-settlement-ratio" },
-      { label: "Claim Process Explained", href: "/health-insurance/claim-process" },
-    ],
+    cta: "Start Reading",
   },
   {
-    title: "Tax Education",
-    description: "Learn about income tax in India - tax slabs, deductions, exemptions, and legal ways to save tax under the Income Tax Act.",
-    icon: Receipt,
-    color: "#059669",
-    href: "/tax",
-    links: [
-      { label: "Complete Tax Guide", href: "/tax" },
-      { label: "Section 80C Explained", href: "/tax/section-80c" },
-      { label: "Old vs New Tax Regime", href: "/tax/old-vs-new-regime" },
-      { label: "Capital Gains Tax", href: "/tax/capital-gains-shares" },
-    ],
-  },
-  {
-    title: "Tax Planning",
-    description: "Maximize your tax savings under the Income Tax Act. Learn about deductions, exemptions, and smart tax-saving strategies.",
-    icon: Receipt,
-    color: "#059669",
-    href: "/tax",
-    links: [
-      { label: "Complete Tax Guide", href: "/tax" },
-      { label: "Section 80C", href: "/tax/section-80c" },
-      { label: "Old vs New Regime", href: "/tax/old-vs-new-regime" },
-      { label: "Tax Calculator", href: "/tax/income-tax-calculator" },
-    ],
-  },
-  {
-    title: "Personal Finance",
-    description: "Build financial literacy - budgeting, saving, investing basics, retirement planning, and wealth creation fundamentals.",
+    label: "Start Investing",
+    description: "SIPs, mutual funds, and investing basics for beginners",
     icon: TrendingUp,
     color: "#7c3aed",
     href: "/investing",
-    links: [
-      { label: "Personal Finance Basics", href: "/investing" },
-      { label: "What is SIP", href: "/investing/what-is-sip" },
-      { label: "Best Mutual Funds", href: "/investing/best-mutual-funds-beginners" },
-      { label: "Emergency Fund Guide", href: "/investing/emergency-fund" },
-      { label: "Retirement Planning", href: "/investing/retirement-planning" },
-    ],
+    cta: "Learn the Basics",
   },
   {
-    title: "Tools & Calculators",
-    description: "Learn how financial calculations work. Make informed financial decisions with our interactive calculators. Plan investments, compare insurance, and optimize your taxes.",
-    icon: Calculator,
+    label: "Build Emergency Fund",
+    description: "How much to save and where to keep it",
+    icon: PiggyBank,
     color: "#ea580c",
-    href: "/tools/sip-return-calculator",
-    links: [
-      { label: "SIP Calculator", href: "/tools/sip-return-calculator" },
-      { label: "EMI Calculator", href: "/tools/emi-calculator" },
-      { label: "Tax Saving Planner", href: "/tools/tax-saving-planner" },
-      { label: "Financial Health Check", href: "/tools/financial-health-check" },
-      { label: "Coverage Estimator", href: "/tools/term-coverage-calculator" },
-    ],
+    href: "/investing/emergency-fund",
+    cta: "See the Guide",
   },
 ];
 
@@ -121,7 +95,7 @@ const featuredTools = [
 
 const stats = [
   { label: "Educational Articles", value: "50+", icon: BookOpen },
-  { label: "Learning Tools", value: "8+", icon: Calculator },
+  { label: "Learning Tools", value: "6+", icon: Calculator },
   { label: "Topics Covered", value: "25+", icon: Target },
   { label: "FAQs Answered", value: "100+", icon: GraduationCap },
 ];
@@ -157,16 +131,21 @@ export default function HomePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="cta-button text-white">
-                  <Link href="/term-insurance">
-                    Explore Term Insurance
+                  <a href="#goals">
+                    Start Learning
                     <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+                  </a>
                 </Button>
                 <Button asChild size="lg" variant="secondary">
-                  <Link href="/tax">
+                  <Link href="/tax/income-tax-calculator">
                     Calculate Your Tax
                   </Link>
                 </Button>
+              </div>
+              <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-blue-100 pt-2">
+                <span>50+ Articles</span>
+                <span>6+ Tools</span>
+                <span>100+ FAQs</span>
               </div>
             </div>
             <div className="hidden lg:block">
@@ -250,53 +229,46 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Categories Section */}
-      <section className="container px-4 md:px-6 py-16 md:py-20">
+      {/* Goal Selector Section */}
+      <section id="goals" className="container px-4 md:px-6 py-16 md:py-20 scroll-mt-16">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Explore Our{" "}
-            <span className="gradient-text">Knowledge Base</span>
+            What Do You Want to{" "}
+            <span className="gradient-text">Achieve Today?</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive guides on insurance, tax planning, and investments
-            to help you make informed financial decisions.
+            Pick what brought you here, and we&apos;ll take you straight to it.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {categories.map((category, index) => {
-            const Icon = category.icon;
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {goals.map((goal, index) => {
+            const Icon = goal.icon;
             return (
-              <Card key={index} className="card-hover group h-full">
-                <CardHeader>
-                  <div
-                    className="w-14 h-14 rounded-xl flex items-center justify-center mb-4"
-                    style={{ backgroundColor: `${category.color}15` }}
-                  >
-                    <Icon className="h-7 w-7" style={{ color: category.color }} />
-                  </div>
-                  <CardTitle className="text-xl group-hover:text-[#1e40af] transition-colors">
-                    <Link href={category.href}>{category.title}</Link>
-                  </CardTitle>
-                  <CardDescription className="text-base">
-                    {category.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-2">
-                    {category.links.map((link, linkIndex) => (
-                      <Link
-                        key={linkIndex}
-                        href={link.href}
-                        className="flex items-center gap-2 text-sm text-muted-foreground hover:text-[#1e40af] transition-colors"
-                      >
-                        <ChevronRight className="h-4 w-4" />
-                        {link.label}
-                      </Link>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
+              <Link key={index} href={goal.href} className="group">
+                <Card className="card-hover h-full">
+                  <CardHeader>
+                    <div
+                      className="w-14 h-14 rounded-xl flex items-center justify-center mb-4"
+                      style={{ backgroundColor: `${goal.color}15` }}
+                    >
+                      <Icon className="h-7 w-7" style={{ color: goal.color }} />
+                    </div>
+                    <CardTitle className="text-xl group-hover:text-[#1e40af] transition-colors">
+                      {goal.label}
+                    </CardTitle>
+                    <CardDescription className="text-base">
+                      {goal.description}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <span className="inline-flex items-center gap-1 text-sm font-medium text-[#1e40af]">
+                      {goal.cta}
+                      <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                    </span>
+                  </CardContent>
+                </Card>
+              </Link>
             );
           })}
         </div>
